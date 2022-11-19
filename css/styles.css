@@ -1,0 +1,135 @@
+/*la página a corregir es el index.html*/
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,600;0,700;1,600&family=Fasthand&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+.header {
+    background-color:rgb(79, 160, 149) ;
+    position: sticky;
+    top :2px;
+    z-index: 10;
+       
+}
+
+.tituloHeader {
+    font-family: 'Fasthand', cursive;
+    font-size: 4rem;
+    text-align: center;
+    color:rgb(246, 246, 201);
+    display: inline;
+    position: relative;   
+}
+
+.fotoFreud {
+    width: 200px ;
+    height: 800 px;
+    border-radius: 1rem;
+    margin: 20px;
+    display: inline;
+    position: relative;
+    float: right;  
+}
+
+.logo {
+    width: 300px;  
+    height: 110px ;
+    margin: 20px;
+    display:inline-block;
+    position: relative;
+    left: 30px;
+   
+}
+.link {
+    text-decoration: none;
+    list-style: none;
+    color:rgb(246, 246, 201) ;
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+    padding: 5px;
+    margin: 2px;
+    background-color:rgb(16, 15, 15);
+    float: left;
+    width: 12%;
+
+}
+
+main { 
+    background-color: rgb(186, 209, 194);
+}
+
+.tituloPrincipal {
+    font-family: 'Crimson Text', serif;
+    font-size: 2rem;
+    text-align: right;
+    font-weight: 700;
+    margin-top: 50px;
+    text-decoration: underline;
+    margin-left: 20px ;
+    margin-right: 20px;
+    
+}
+
+.parrafo {
+    font-family: 'Crimson Text', serif;
+    font-size: 2rem;
+    text-align: right;
+    font-weight: 600;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+} 
+
+.video {
+    position: relative;
+    display:inline-block;
+    margin : 30px auto;    
+}
+.seccionSecundaria .subtitulo {
+    font-family: 'Crimson Text', serif;
+    font-size: 2rem;
+    text-align: left;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.seccionSecundaria .parrafo {
+    font-family: 'Crimson Text', serif;
+    font-size: 2rem;
+    text-align: justify;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+footer {
+    background-color:rgb(21, 52, 98);
+    color: rgb(246, 246, 201);  
+}
+.parrafoFooter{
+    font-family:'Crimson Text', serif ;
+    font-size: 2rem;
+    font-style: italic;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.socialButton {
+    font-size: 2rem;
+    text-align: center;
+    margin:20px;
+    width: 24px;
+    height: auto;
+    display: inline;
+    margin-right: 20px;
+    border-radius: 50%;
+
+}
