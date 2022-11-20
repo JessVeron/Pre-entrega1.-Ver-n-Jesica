@@ -1,29 +1,28 @@
-/*la página a corregir es el index.html*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:ital,wght@0,400;0,700;1,200&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,600;0,700;1,600&family=Fasthand&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 62.5%;
-}
+  }
 
+  
 .header {
-    background-color:rgb(79, 160, 149) ;
     position: sticky;
-    top :2px;
-    z-index: 10;
+    top :5wh;
+    z-index: 9;
+    background-image: linear-gradient(to right bottom, #280e8e, #44005b, #3b0033, #260218, #000000);
        
 }
 
 .tituloHeader {
-    font-family: 'Fasthand', cursive;
-    font-size: 4rem;
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+    font-weight: bolder;
     text-align: center;
     color:rgb(246, 246, 201);
-    display: inline;
-    position: relative;   
+    margin-top: 18%; 
 }
 
 .fotoFreud {
@@ -45,91 +44,107 @@
     left: 30px;
    
 }
-.link {
-    text-decoration: none;
-    list-style: none;
-    color:rgb(246, 246, 201) ;
-    font-size: 2rem;
-    text-align: center;
-    position: relative;
-    padding: 5px;
-    margin: 2px;
-    background-color:rgb(16, 15, 15);
-    float: left;
-    width: 12%;
 
+.nav{
+  background-color: bisque; 
+   }
+ 
+.nav-item {
+    font-family:'Raleway', sans-serif;
+    font-weight: bold;
+    text-shadow: 1rem;
+    text-transform: uppercase;
 }
 
-main { 
-    background-color: rgb(186, 209, 194);
+
+.main { 
+    background-color: antiquewhite;
+    background-image: url ("cartaFondo.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
 }
 
+.video {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-left: 10%;
+    margin-top: 10%;
+}
 .tituloPrincipal {
-    font-family: 'Crimson Text', serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 2rem;
     text-align: right;
     font-weight: 700;
-    margin-top: 50px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     text-decoration: underline;
-    margin-left: 20px ;
-    margin-right: 20px;
-    
+       
+}
+
+.subtitulo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 2rem;
+    text-decoration: underline;
+    margin-left: 1%;
 }
 
 .parrafo {
-    font-family: 'Crimson Text', serif;
-    font-size: 2rem;
-    text-align: right;
-    font-weight: 600;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
-
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    text-align: justify;
+    font-weight: 200;
+    text-underline-offset: 1rem;
+    margin-left: 1%;
 } 
 
-.video {
-    position: relative;
-    display:inline-block;
-    margin : 30px auto;    
-}
+
 .seccionSecundaria .subtitulo {
-    font-family: 'Crimson Text', serif;
-    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
     text-align: left;
     font-weight: 700;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    margin-left: 20px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 1%;
 }
+
+
 .seccionSecundaria .parrafo {
-    font-family: 'Crimson Text', serif;
-    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
     text-align: justify;
-    margin-top: 5px;
-    margin-bottom: 25px;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    margin-left: 1%;
 }
 footer {
-    background-color:rgb(21, 52, 98);
+    background-image: linear-gradient(to bottom, #280e8e, #44005b, #3b0033, #260218, #000000);
     color: rgb(246, 246, 201);  
 }
 .parrafoFooter{
-    font-family:'Crimson Text', serif ;
-    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
     font-style: italic;
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 10px;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .socialButton {
-    font-size: 2rem;
+    font-size: 1rem;
     text-align: center;
-    margin:20px;
-    width: 24px;
+    margin:5%;
+    width: 10%;
     height: auto;
     display: inline;
     margin-right: 20px;
     border-radius: 50%;
 
 }
+
+

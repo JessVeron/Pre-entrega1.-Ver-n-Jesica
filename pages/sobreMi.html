@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prof. Sigmund Freud</title>
     <link rel="shortcut icon" href="../assets/images/divanF.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <header class="header">
-        <img src="../assets/images/logo.png" alt="logo" class="logo">
+        <a href="../index.html"><img src="../assets/images/logo.png" alt="logo" class="logo"></a>
         <h1 class="tituloHeader">Hacer conciente lo inconciente</h1>
         <img src="../assets/images/Freud.jpeg" alt="fotoFreud" class="fotoFreud">
         <nav>
@@ -23,12 +24,16 @@
              </ul>
         </nav>
 </header>
-<main>
-    <h1>Sobre mí</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore illum ratione doloremque ab consequatur in. Quis voluptates possimus repellendus quasi magnam, tempora odit hic, ratione illum ipsa, porro labore necessitatibus.
-    <Section>
-        <img src="../assets/images/divanF.jpg" alt="fotoPersonal">
-    </Section>
+<main class="conteiner">
+    <div class="row align-items-center">
+        <div class="col">
+            <h1 class="tituloPrincipal">Sobre mí</h1>
+            <p class="parrafo">Soy Jesica , estudiante de psicologia de la UBA y apasionada del psicoanálisis. Desde la adolescencia me interesa la psicologia. Educada en las ciencias biológicas siempre me pregunte por aquello que nos hace tan diferentes si todos compartimos la misma materia. Los invito a compartir este viaje de descubrimiento conmigo.</p>
+        </div>
+        <div class="col">
+            <img src="../assets/images/divanF.jpg" alt="caricaturaFreud">
+        </div>
+    </div>
 </main>
 <footer class="footer">
         <ul>
@@ -41,5 +46,6 @@
         <p class="parrafoFooter">Todos los derechos reservados</p>
     
 </footer>
+<script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

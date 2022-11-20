@@ -6,37 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title >Prof. Sigmund Freud</title>
     <link rel="shortcut icon" href="./assets/images/divanF.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="./css/styles.css">
     
 </head>
 <body>
-    <header class="header">
-        <img src="./assets/images/logo.png" alt="logo" class="logo">
-        <h1 class="tituloHeader">Hacer conciente lo inconciente</h1>
-        <img src="./assets/images/Freud.jpeg" alt="fotoFreud" class="fotoFreud">
+    <header class=header class="fixed-top" >
+        <div class="conteiner">
+            <div class="row">
+                <div class="col"><a href="./index.html"><img src="./assets/images/logo.png" alt="logo" class="logo"></a></div>
+                <div class="col "><h1 class="tituloHeader">"Hacer conciente lo inconciente"</h1></div>
+                <div class="col"><img src="./assets/images/Freud.jpeg" alt="fotoFreud" class="fotoFreud"></div>
+            </div>
+        </div>    
         <nav>
-            <ul>
-                <li><a class="link" href="./index.html">Inicio</a></li>
-                <li><a class="link" href="./pages/sobreMi.html">Sobre Mi</a></li>   
-                <li><a class="link" href="./pages/obra.html">Obra</a></li>
-                <li><a class="link" href="./pages/tienda.html">Tienda</a></li>
-                <li><a class="link" href="./pages/contacto.html">Contacto</a></li>
+            <ul class="nav justify-content-center align-items-center bg">
+                <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="./pages/sobreMi.html">Sobre Mi</a>
+                <li class="nav-item"><a class="nav-link" href="./pages/obra.html">Obra</a></li>
+                <li class="nav-item"><a class="nav-link" href="./pages/tienda.html">Tienda</a></li>
+                <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
-    <main class="principal">
-        <h1 class="tituloPrincipal">¿Quién fué el Prof. Dr. Freud?</h1>
-            <p class="parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, assumenda reiciendis impedit debitis molestias est voluptas, magni consequuntur rerum eius similique sint facere ipsum dignissimos maxime, illum magnam corrupti! Dolorem.
-            Ipsum minus impedit accusamus maiores. Blanditiis labore corrupti excepturi voluptates, modi nostrum quo fugit expedita sed molestias soluta tempora placeat, incidunt eum nihil repellendus necessitatibus cum natus molestiae iure. Excepturi.
-            Dolorum, impedit suscipit! Iure natus quo optio amet dolore at, corporis tempora consequatur, blanditiis ea a inventore minus quos tenetur quasi voluptatum deserunt incidunt voluptates quisquam nesciunt fugit temporibus magni.
-            Maiores harum ea reiciendis repellendus cumque. Et eos nobis cumque libero dolores! Illum mollitia repudiandae unde modi harum deleniti, dolor eum quia rerum fuga temporibus quod, quidem, numquam veniam reprehenderit?
-            Similique deserunt ducimus qui? Voluptate dolores facilis delectus id doloremque incidunt odit reiciendis nobis modi? Quisquam sed adipisci tenetur aliquam quaerat, libero tempora possimus autem quis itaque error voluptate minus?</p>
-        <div class="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/G_wGCMuDHnM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <main class="main">
+       <div class="conteiner-xxl">
+        <div class="row">
+            <div class="col" class="video">
+                <iframe width="85%" height="70%" src="https://www.youtube.com/embed/OQ4KsA4LVRs" title="YouTube video player"  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col" >
+                <h1 class="tituloPrincipal">¿Quién fué el Prof. Dr. Freud?</h1>
+                <h2 class="subtitulo">Origenes</h2>
+                <p class="parrafo">De profesión neurólogo y austriaco de nacimiento el Dr. Freud se convirtió en el padre del Psicoanálisis que aún hoy en día está en vigencia y se enseña en la mayoría de las universidades de país.Durante su trayectoria como investigador se encontró con sus histéricas: aquellas personas que padecían enfermedades nerviosas pero que finalmente no podían encontrar su explicación en la neurología convencional.</p>   
+                <h2 class="subtitulo">Innovación</h2>        
+                <p class="parrafo"> En su clínica privada especializada en trastornos nerviosos comenzó a desarrollar una teoría psicológica, así como el posible tratamiento de dichas afecciones estudiando a sus pacientes.</p>
+                <h2 class="subtitulo">Legado</h2>
+                <p class="parrafo" > A lo largo de 53 se encargó de estudiar, investigar, desarrollar y enseñar su teoría hasta su muerte en 1939. Sus numerosos discípulos continuaron con su trabajo dando origen a diferentes ramas psicoanalíticas que existen en la actualidad.</p>
+            </div>
         </div>
+    </div>
     <section class="seccionSecundaria">
         <h2 class="subtitulo">Mision</h2>
-        <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, rem eius incidunt quae laborum quisquam ratione fugiat enim ipsum nobis praesentium qui culpa illum aliquid a nihil fuga excepturi nostrum!</p>
+        <p class="parrafo">Mantener vivo el legado del Prof. Sigmund Freud y conectar a todas las personas interesadas en la continuidad de su obra.</p>
     </section>
     </main>
     <footer class="footer">
@@ -49,5 +61,9 @@
         </ul>
         <p class="parrafoFooter">Todos los derechos reservados</p>
     </footer>
+    <script src="./js/bootstrap.bundle.min.js">
+
+    </script>
+    
 </body>
 </html>
