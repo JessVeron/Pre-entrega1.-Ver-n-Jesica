@@ -10,20 +10,31 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <header class="header">
-        <a href="../index.html"><img src="../assets/images/logo.png" alt="logo" class="logo"></a>
-        <h1 class="tituloHeader">Hacer conciente lo inconciente</h1>
-        <img src="../assets/images/Freud.jpeg" alt="fotoFreud" class="fotoFreud">
-        <nav>
-            <ul>
-                <li><a class="link" href="../index.html">Inicio</a></li>
-                <li><a class="link" href="./sobreMi.html">Sobre mi</a></li>
-                <li><a class="link" href="./obra.html">Su obra</a></li>
-                <li><a class="link" href="./tienda.html">Tienda</a></li>
-                <li><a class="link" href="#">Contacto</a></li>
-             </ul>
-        </nav>
-</header>
+    <header class=header>
+        <div class="container">
+            <div class="row">
+                <div class="col"><a href="../index.html"><img src="../assets/images/logo.png" alt="logo" class="logo"></a></div>
+                <div class="col "><h1 class="tituloHeader">"Hacer conciente lo inconciente"</h1></div>
+                <div class="col"><img src="../assets/images/Freud.jpeg" alt="fotoFreud" class="fotoFreud"></div>
+            </div>
+        </div>    
+          <nav class="navbar navbar-expand-lg navbar-light bg-black ">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" href="../index.html">Inicio</a>
+                  <a class="nav-link" href="./obra.html">Obra</a>
+                  <a class="nav-link" href="./sobreMi.html">Conoceme</a>
+                  <a class="nav-link" href="./tienda.html">Tienda</a>
+                  <a class="nav-link active" aria-current="page"  href="./contacto.html">Contacto</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
 <main>
 <div class="contact_form">
 
@@ -49,16 +60,12 @@
     </section>      
 </main>
 <footer class="footer">
-    
-    <ul>
-        <a href="https://www.instagram.com/" target= blank ><img class="socialButton" src="https://scontent.faep9-2.fna.fbcdn.net/v/t39.2365-6/89319900_506382610280628_2520212398984396800_n.svg?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=ad8a9d&amp;_nc_ohc=aZIscQC_da8AX-MgMC9&amp;_nc_ht=scontent.faep9-2.fna&amp;oh=00_AfD9f9kJpEFabPdR6x2iqietnsMbKn8GHyjUdhjeMiQi4Q&amp;oe=635F9E75" alt="Síguenos en Instagram" ></a>  
-           
-        <a href="https://www.facebook.com" target="_blank"><img class="socialButton" src="https://scontent.faep9-3.fna.fbcdn.net/v/t39.2365-6/89126182_222315695571651_4936319991919149056_n.svg?_nc_cat=1&amp;ccb=1-7&amp;_nc_sid=ad8a9d&amp;_nc_ohc=7MV0SzR5hmoAX-4RZ1P&amp;_nc_ht=scontent.faep9-3.fna&amp;oh=00_AfBJHvM_EMlGf4tutasfSOZo8-mZBfWndY5V5ZePBMOT6w&amp;oe=635FCB2F" alt="Síguenos en Facebook" ></a>
-            
-        <a href="https://twitter.com" target=blank ><img class=socialButton src="https://scontent.faep9-3.fna.fbcdn.net/v/t39.2365-6/89154638_493934268150363_1123534170136510464_n.svg?_nc_cat=1&amp;ccb=1-7&amp;_nc_sid=ad8a9d&amp;_nc_ohc=16lLXaizZucAX-zPDJ-&amp;_nc_ht=scontent.faep9-3.fna&amp;oh=00_AfD7WQfgnWe8x3WZZo1TqtkMYEjDRyQn8NVnrgEm8_81Vw&amp;oe=635ECF85" alt="Síguenos en Twitter" ></a>   
+    <ul class=" socialMedia">
+      <a href="https://www.instagram.com" target= blank > <img src="../assets/images/instagram_logo_icon_229292.png" alt="Seguinos en Intagram"></a>
+      <a href="https://www.facebook.com" target="_blank"><img src="../assets/images/social_facebook_box_blue_256_30649.png" alt="Seguinos en facebook"></a>
+      <a href="https://www.twitter.com" target="_blank"><img src="../assets/images/1491579583-yumminkysocialmedia02_83111.png" alt="Seguinos en Twitter"></a>
     </ul>
     <p class="parrafoFooter">Todos los derechos reservados</p>
-    
 </footer>
 <script src="../js/bootstrap.bundle.min.js"></script>
 </body>

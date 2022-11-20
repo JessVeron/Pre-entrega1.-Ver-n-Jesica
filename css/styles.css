@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:ital,wght@0,400;0,700;1,200&display=swap');
 
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
   
 .header {
@@ -60,21 +59,17 @@
    
 }
 
-
-.main { 
-    background-color: antiquewhite;
-    background-image: ("cartaFondo.jpg"); 
-    bottom: 0%;
-}
-
 .contenedores {
-    display:flex;
-    align-items: center ;
-    justify-content: center;
+    background: rgb(128, 88, 37), ("cartaFondo.jpg");
+    bottom: 0%;
+    background-size: cover;
+    background-position: center;
 }
+
+
 .video {
     display: flex;
-    position: absolute;
+    position: relative;
     align-content: center;
     justify-content: center;
     margin-top: 20%;
@@ -106,7 +101,6 @@
     font-size: 1rem;
     text-align: justify;
     font-weight: 400;
-    text-underline-offset: 1rem;
     margin-left: 1%;
 } 
 
@@ -140,19 +134,58 @@
 }
 
 .socialMedia {      
-    width: 2rem;
-    height: 2rem;
-    display: inline;
-    align-items: center;
-    margin-top: 2rem;
-    
+    display:flex;
+    align-items:center;
+    width:100%;
+    padding: 10px;
+    border-radius:10px;    
+    justify-content:space-between;
  }
+
+.socialMedia :hover{
+   transform:translateY(-10px);
+}
+
 
  footer {
     background-image: linear-gradient(to bottom, #280e8e, #44005b, #3b0033, #260218, #000000);
     color: rgb(246, 246, 201);  
     width: 100%;
-    height: 8rem;
+    height: 10rem;
     bottom: 0%;
     
  }
+ html body {
+
+    background-image: ("cartaFondo.jpg"); 
+    bottom: 0%;
+    background-size: cover;
+    background-position: center;
+
+ }
+
+.card {
+    display: inline-block;
+    margin: 4rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    border-color: #280e8e;
+    text-align: center;
+    width: 18rem;
+    height: fit-content;
+    background-color: burlywood;
+    font-family: 'Raleway', sans-serif;
+
+
+}
+
+.btn {
+    color: #280e8e;
+    background-color: bisque ;
+    border-color: #44005b;
+    font-family: 'Raleway', sans-serif;
+    
+}
+.btn :hover {
+    color: #44005b ;
+}
