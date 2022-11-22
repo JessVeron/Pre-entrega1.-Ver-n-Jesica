@@ -8,67 +8,71 @@
     <link rel="shortcut icon" href="./assets/images/divanF.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="./css/styles.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 </head>
 <body>
-    <header class=header>
-        <div class="container">
-            <div class="row">
-                <div class="col"><a href="./index.html"><img src="./assets/images/logo.png" alt="logo" class="logo"></a></div>
-                <div class="col "><h1 class="tituloHeader">"Hacer conciente lo inconciente"</h1></div>
-                <div class="col"><img src="./assets/images/Freud.jpeg" alt="fotoFreud" class="fotoFreud"></div>
-            </div>
-        </div>    
-          <nav class="navbar navbar-expand-lg navbar-light bg-black ">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
-                  <a class="nav-link" href="./pages/obra.html">Obra</a>
-                  <a class="nav-link" href="./pages/sobreMi.html">Conoceme</a>
-                  <a class="nav-link" href="./pages/tienda.html">Tienda</a>
-                  <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+<!--     este es el header con el navbar de bootstrap      -->
+       <header class=header>
+         <div class="container">
+              <div class="row">
+                  <div class="col-lg-4 col-md-4 col-sm-12"><a href="./index.html"><img src="./assets/images/logo.png" alt="logo" class="logo" class="animate__animated animate__pulseanimate__infinite	infinite " ></a></div>
+                  <div class="col-lg-4 col-md-4 col-sm-12"><h1 class="tituloHeader">"Hacer conciente lo inconciente"</h1></div>
+                  <div class="col-lg-4 col-md-4 col-sm-12"><img src="./assets/images/Freud.jpeg" alt="fotoFreud" class="fotoFreud"></div>
+              </div>
+          </div>    
+            <nav class="navbar navbar-expand-lg navbar-light bg-black ">
+              <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                    <a class="nav-link" href="./pages/obra.html">Obra</a>
+                    <a class="nav-link" href="./pages/sobreMi.html">Conoceme</a>
+                    <a class="nav-link" href="./pages/tienda.html">Tienda</a>
+                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                  </div>
                 </div>
               </div>
+            </nav>
+      </header>
+      <main>
+ <!--     video     -->       
+          <div class="container">
+            <div class="row">
+                <div class="col" class="video">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/OQ4KsA4LVRs" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+<!--     titulo con subtitulos      -->                
+                <div class="col" >
+                  <h1 class="tituloPrincipal">¿Quién fué el Prof. Dr. Freud?</h1>
+                  <h2 class="subtitulo">Origenes</h2>
+                  <p class="parrafo">De profesión neurólogo y austriaco de nacimiento el Dr. Freud se convirtió en el padre del Psicoanálisis que aún hoy en día está en vigencia y se enseña en la mayoría de las universidades de país.Durante su trayectoria como investigador se encontró con sus histéricas: aquellas personas que padecían enfermedades nerviosas pero que finalmente no podían encontrar su explicación en la neurología convencional.</p>   
+                  <h2 class="subtitulo">Innovación</h2>        
+                  <p class="parrafo"> En su clínica privada especializada en trastornos nerviosos comenzó a desarrollar una teoría psicológica, así como el posible tratamiento de dichas afecciones estudiando a sus pacientes.</p>
+                  <h2 class="subtitulo">Legado</h2>
+                  <p class="parrafo" > A lo largo de 53 años se encargó de estudiar, investigar, desarrollar y enseñar su teoría hasta su muerte en 1939. Sus numerosos discípulos continuaron con su trabajo dando origen a diferentes ramas psicoanalíticas que existen en la actualidad.</p>
+                </div>
             </div>
-          </nav>
-    </header>
-    <main class="container-fluid">
-      <div class="contenedores">
-        <div class="container">
-          <div class="row">
-              <div class="col" class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/OQ4KsA4LVRs" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-              <div class="col" >
-                <h1 class="tituloPrincipal">¿Quién fué el Prof. Dr. Freud?</h1>
-                <h2 class="subtitulo">Origenes</h2>
-                <p class="parrafo">De profesión neurólogo y austriaco de nacimiento el Dr. Freud se convirtió en el padre del Psicoanálisis que aún hoy en día está en vigencia y se enseña en la mayoría de las universidades de país.Durante su trayectoria como investigador se encontró con sus histéricas: aquellas personas que padecían enfermedades nerviosas pero que finalmente no podían encontrar su explicación en la neurología convencional.</p>   
-                <h2 class="subtitulo">Innovación</h2>        
-                <p class="parrafo"> En su clínica privada especializada en trastornos nerviosos comenzó a desarrollar una teoría psicológica, así como el posible tratamiento de dichas afecciones estudiando a sus pacientes.</p>
-                <h2 class="subtitulo">Legado</h2>
-                <p class="parrafo" > A lo largo de 53 años se encargó de estudiar, investigar, desarrollar y enseñar su teoría hasta su muerte en 1939. Sus numerosos discípulos continuaron con su trabajo dando origen a diferentes ramas psicoanalíticas que existen en la actualidad.</p>
-              </div>
-           </div>
-        </div>
-      </div>
-    <section class="seccionSecundaria">
-        <h2 class="subtitulo">Mision</h2>
-        <p class="parrafo">Mantener vivo el legado del Prof. Sigmund Freud y conectar a todas las personas interesadas en la continuidad de su obra.</p>
-    </section>
-    </main>
-    <footer class="footer">
-        <ul class=" socialMedia">
-          <a href="https://www.instagram.com" target= blank > <img src="./assets/images/instagram_logo_icon_229292.png" alt="Seguinos en Intagram"></a>
-          <a href="https://www.facebook.com" target="_blank"><img src="./assets/images/social_facebook_box_blue_256_30649.png" alt="Seguinos en facebook"></a>
-          <a href="https://www.twitter.com" target="_blank"><img src="./assets/images/1491579583-yumminkysocialmedia02_83111.png" alt="Seguinos en Twitter"></a>
-        </ul>
-        <p class="parrafoFooter">Todos los derechos reservados</p>
-    </footer>
-    <script src="./js/bootstrap.bundle.min.js"></script>
-    
+          </div>
+<!--    mision de la página      -->     
+      <section class="seccionSecundaria">
+          <h2 class="subtitulo">Mision</h2>
+          <p class="parrafo">Mantener vivo el legado del Prof. Sigmund Freud y conectar a todas las personas interesadas en la continuidad de su obra.</p>
+      </section>
+      </main>
+ <!--     footer con animación      -->
+      <footer class="footer">
+          <ul class=" socialMedia">
+            <a href="https://www.instagram.com" target= blank > <img src="./assets/images/instagram_logo_icon_229292.png" alt="Seguinos en Intagram"></a>
+            <a href="https://www.facebook.com" target="_blank"><img src="./assets/images/social_facebook_box_blue_256_30649.png" alt="Seguinos en facebook"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="./assets/images/1491579583-yumminkysocialmedia02_83111.png" alt="Seguinos en Twitter"></a>
+          </ul>
+          <p class="parrafoFooter">Todos los derechos reservados</p>
+      </footer>
+   
+    <script src="./js/bootstrap.bundle.min.js"></script> 
 </body>
 </html>

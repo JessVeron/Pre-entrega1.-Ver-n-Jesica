@@ -8,18 +8,21 @@
     <link rel="shortcut icon" href="./assets/images/divanF.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 </head>
 <body>
+<!--     este es el header con el navbar de bootstrap      -->
     <header class=header>
         <div class="container">
             <div class="row">
-                <div class="col"><a href="../index.html"><img src="../assets/images/logo.png" alt="logo" class="logo"></a></div>
-                <div class="col "><h1 class="tituloHeader">"Hacer conciente lo inconciente"</h1></div>
-                <div class="col"><img src="../assets/images/Freud.jpeg" alt="fotoFreud" class="fotoFreud"></div>
+                <div class="col-lg-4 col-md-4 col-sm-12"><a href="../index.html"><img src="../assets/images/logo.png" alt="logo" class="logo"class="animate__animated animate__pulseanimate__infinite	infinite "  ></a></div>
+                <div class="col-lg-4 col-md-4 col-sm-12"><h1 class="tituloHeader">"Hacer conciente lo inconciente"</h1></div>
+                <div class="col-lg-4 col-md-4 col-sm-12"><img src="../assets/images/Freud.jpeg" alt="fotoFreud" class="fotoFreud"></div>
             </div>
         </div>    
           <nav class="navbar navbar-expand-lg navbar-light bg-black ">
-            <div class="container-fluid">
+            <div class="container">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -35,38 +38,56 @@
             </div>
           </nav>
     </header>
-<main>
-<div class="contact_form">
-
-    <div class="formulario">      
-      <h1 class="tituloPrincipal">Contacto</h1>
-    <section>
-        <h2 class="subtitulo">Escribime para colaborar con el proyecto!!</h2>
-        <form>
-            <div>
-                <input type="text" placeholder="Colocá tu nombre*" required>
-            </div>
-            <div>
-                <input type="email" placeholder="Tu mail*" required>
-            </div>
-            <div>
-                <input type="text" placeholder="Dejá tu comentario"> 
-            </div>
-            <div>
-                <label for="">Suscribite para novedades</label>
-                <input type="checkbox" name="Novedades">
-            </div>
-        </form>
-    </section>      
-</main>
-<footer class="footer">
+    <main>
+ <!--   formulario      -->
+    <div class=" container"> 
+      <div class="row">
+      <div class="contact_form" class="col-lg-6 col-md-12 col-sm-12">
+        <div>      
+            <section class="formulario">
+              <h1 class="tituloPrincipal">Contacto</h1>
+              <h2 class="subtitulo">Escribime para colaborar con el proyecto!!</h2>
+              <form >
+                <div class="formularioCaja">
+                  <input type="text" placeholder="Colocá tu nombre*" required>
+                </div>
+                <div class="formularioCaja" >
+                  <input type="email" placeholder="Tu mail*" required>
+                </div>
+                <div class="formularioCaja" >
+                  <input type="text" placeholder="Dejá tu comentario"> 
+                </div>
+                <div>
+                  <label for="">Suscribite para novedades</label>
+                  <input type="checkbox" name="Novedades">
+               </div>
+               <div>
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+               </div>
+              </form>
+            </section> 
+ <!--     mapa      -->
+            <section>
+             <div class="col-lg-6 col-md-12 col-sm-12">
+                <h2 class="subtitulo"> Encontrate con nosotros</h2>
+                <p class="parrafo">Nos juntamos todos los sábados a las 16 hs en:</p>
+                <div class="mapa">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.6768558863164!2d-58.41459088519494!3d-34.61233196546003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca8dd28cf657%3A0xc4f373c874bb9316!2sFacultad%20de%20Psicolog%C3%ADa%2C%20Universidad%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1669053691745!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">mapa</iframe>
+                </div>
+              </div> 
+             </section>
+       </div>
+     </div>
+  </main>
+  <!--     footer con animación      -->
+  <footer class="footer">
     <ul class=" socialMedia">
       <a href="https://www.instagram.com" target= blank > <img src="../assets/images/instagram_logo_icon_229292.png" alt="Seguinos en Intagram"></a>
       <a href="https://www.facebook.com" target="_blank"><img src="../assets/images/social_facebook_box_blue_256_30649.png" alt="Seguinos en facebook"></a>
       <a href="https://www.twitter.com" target="_blank"><img src="../assets/images/1491579583-yumminkysocialmedia02_83111.png" alt="Seguinos en Twitter"></a>
     </ul>
     <p class="parrafoFooter">Todos los derechos reservados</p>
-</footer>
+  </footer>
 <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
