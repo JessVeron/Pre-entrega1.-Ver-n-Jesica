@@ -12,7 +12,7 @@
     top: 0px;
     position: sticky;
     z-index: 10;
-    opacity: 90%;
+    opacity: 95%;
 }
 
 .tituloHeader {
@@ -46,7 +46,7 @@
 
 /*personalizacion del navegador*/
 .navbar{
-  background-color: burlywood ; 
+  background-color: rgb(139, 35, 139) ; 
   width: 100%;
   justify-content: space-around;
  
@@ -56,7 +56,7 @@
     font-family:'Raleway', sans-serif;
     font-weight:bolder;
     text-transform: uppercase;
-    color: #000000;
+    color: rgb(241, 199, 8)  ;
     margin-right: 20%; 
     margin-left: 20%;  
     padding-left: 2%;
@@ -118,7 +118,11 @@
     margin-top: 5rem;
 }
 
+.row {
+    margin:0;
+    padding: 0;
 
+}
 /*estilos de los botones de redes sociales y animacion*/
 .socialMedia {      
     display: flex;
@@ -154,6 +158,7 @@ main {
     border-color: #280e8e;
     text-align: center;
     width: 18rem;
+    height: 20rem;
     object-fit: cover;
     height: fit-content;
     background-color: burlywood;
@@ -182,10 +187,12 @@ background-color:  #44005b ;
     text-align: start;
     font-weight: bold;
     margin-bottom: 1rem;
+   
 }
 
 .formularioCaja {
-margin-top: 1rem;
+margin-top: 1rem; 
+background-image: url(notasFreud.png);
 }
 
 .mapa{
