@@ -12,16 +12,17 @@
 
 </head>
 <body>
+  <div class="fondo">
 <!--     este es el header con el navbar de bootstrap      -->
        <header class=header>
          <div class="container">
               <div class="row">
                   <div class="col-lg-4 col-md-4 col-sm-12"><a href="./index.html"><img src="./assets/images/logo.png" alt="logo" class="logo" class="animate__animated animate__pulseanimate__infinite	infinite " ></a></div>
-                  <div class="col-lg-4 col-md-4 col-sm-12"><h1 class="tituloHeader">"Hacer conciente lo inconciente"</h1></div>
+                  <div class="col-lg-4 col-md-4 col-sm-12"><h1 class="tituloHeader">"Hacer conciente lo inconsciente"</h1></div>
                   <div class="col-lg-4 col-md-4 col-sm-12"><img src="./assets/images/Freud.jpeg" alt="fotoFreud" class="fotoFreud"></div>
               </div>
           </div>    
-            <nav class="navbar navbar-expand-lg navbar-light bg-black ">
+            <nav class="navbar navbar-expand-lg navbar-light  ">
               <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -39,14 +40,17 @@
             </nav>
       </header>
       <main>
- <!--     video     -->       
+             
+<!--     video     -->       
           <div class="container">
             <div class="row">
-                <div class="col" class="video">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/OQ4KsA4LVRs" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                  <div class="video">
+                      <iframe  style="text-align:center" width="560" height="315" src="https://www.youtube.com/embed/OQ4KsA4LVRs" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+               </div>
 <!--     titulo con subtitulos      -->                
-                <div class="col" >
+                <div class="col-lg-6 col-md-12 col-sm-12" >
                   <h1 class="tituloPrincipal">¿Quién fué el Prof. Dr. Freud?</h1>
                   <h2 class="subtitulo">Origenes</h2>
                   <p class="parrafo">De profesión neurólogo y austriaco de nacimiento el Dr. Freud se convirtió en el padre del Psicoanálisis que aún hoy en día está en vigencia y se enseña en la mayoría de las universidades de país.Durante su trayectoria como investigador se encontró con sus histéricas: aquellas personas que padecían enfermedades nerviosas pero que finalmente no podían encontrar su explicación en la neurología convencional.</p>   
@@ -57,6 +61,7 @@
                 </div>
             </div>
           </div>
+        
 <!--    mision de la página      -->     
       <section class="seccionSecundaria">
           <h2 class="subtitulo">Mision</h2>
@@ -72,7 +77,7 @@
           </ul>
           <p class="parrafoFooter">Todos los derechos reservados</p>
       </footer>
-   
+    </div>
     <script src="./js/bootstrap.bundle.min.js"></script> 
 </body>
 </html>

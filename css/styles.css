@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:ital,wght@0,400;0,700;1,200&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;0,900;1,700&family=Water+Brush&display=swap');
 
 *{
     margin: 0;
@@ -8,7 +10,7 @@
 
 /* caracteristicas del header*/
 .header {
-    background-image: linear-gradient(to right bottom, #280e8e, #44005b, #3b0033, #260218, #000000);
+    background-image: linear-gradient(to right top, #051937, #003b5f, #005f77, #008479, #25a667);
     top: 0px;
     position: sticky;
     z-index: 10;
@@ -16,12 +18,11 @@
 }
 
 .tituloHeader {
-    font-family: 'Lobster', cursive;
+    font-family: 'Water Brush', cursive;
     font-size: 3rem;
-    font-weight: bold;
     text-align: center;
     color:rgb(246, 246, 201);
-    margin-top: 18%; 
+    margin-top: 10%; 
 }
 
 .fotoFreud {
@@ -46,76 +47,98 @@
 
 /*personalizacion del navegador*/
 .navbar{
-  background-color: rgb(139, 35, 139) ; 
+  background-color: rgb(7, 82, 69) ; 
   width: 100%;
   justify-content: space-around;
  
   }
  
 .nav-link {
-    font-family:'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     font-weight:bolder;
     text-transform: uppercase;
-    color: rgb(241, 199, 8)  ;
     margin-right: 20%; 
     margin-left: 20%;  
     padding-left: 2%;
    
 }
 
-/*intento de alineacion del video*/
-.video {
+
+.fondo {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/imagenFondo.jpg);
     display: flex;
     flex-direction: column;
     position: absolute;
     align-content: center;
     justify-content: center;
-    margin-top: 20%;
+    background-size: contain;
+    width: 100%;
+    
+}
+
+
+/*intento de alineacion del video*/
+.video {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-content: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
 }
 
 /*estilos generales de texto*/
 .tituloPrincipal {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 2rem;
     text-align: right;
-    font-weight: 700 bold;
+    font-weight: 900 bold;
     margin-top: 2rem;
     margin-bottom: 3rem;
     text-decoration: underline;
     margin-left: 2rem;
     margin-right: 2rem;
+    color: rgb(240, 240, 247);
        
 }
 
 .subtitulo {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
+    font-weight: 700;
     font-weight: bolder;
     text-align: left;
     margin-bottom: 2rem;
     text-decoration: underline;
     margin-left: 1%;
+    color: rgb(240, 240, 247)
 }
 
+.subtitulo2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400 bold;
+}
 .parrafo {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     text-align: justify;
     font-weight: 400;
     margin-left: 3rem;
     margin-right: 3rem;
+    color: rgb(240, 240, 247)
 } 
 
 
 .parrafoFooter{
-    font-family: 'Raleway', sans-serif;
-    font-size: 1rem;
-    font-style: italic;
+    font-family: 'Water Brush', cursive;
+    font-size: 2rem;
+    font-weight: 300;
     text-align: center;
     margin-bottom: 2rem;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 .row {
@@ -136,14 +159,11 @@
     animation: float infinite 4s ease-in-out;
 }
 
-/* estilos de main y footer*/
-main {
-    background-color: rgb(236, 219, 144);
- }
+/* estilos footer*/
 
  footer {
-    background-image: linear-gradient(to bottom, #280e8e, #44005b, #3b0033, #260218, #000000);
-    color: rgb(246, 246, 201);  
+    background-image: linear-gradient(to right top, #051937, #003b5f, #005f77, #008479, #25a667);
+    color: rgb(240, 240, 247);  
     width: 100%;
     height: 25vh;
     bottom: 0%;
@@ -153,50 +173,52 @@ main {
 /*estilados propios de cards de bootstrap*/
 .card {
     display: inline-block;
+    width: 18rem;
+    height: max-content;
     margin: 4rem;
     padding: 1rem;
-    border-color: #280e8e;
-    text-align: center;
-    width: 18rem;
-    height: 20rem;
-    object-fit: cover;
-    height: fit-content;
-    background-color: burlywood;
-    font-family: 'Raleway', sans-serif;
+    border-color: #14169c;
+    background-color: rgb(7, 82, 69);
+    font-family: 'Roboto', sans-serif;
     font-size: small;
-    
+    text-align: center;
+    color: rgb(240, 240, 247);
 }
 
 .btn {
-    color: #280e8e;
-    background-color: bisque ;
-    border-color: #44005b;
-    font-family: 'Raleway', sans-serif;
+    color: rgb(10, 6, 240);
+    background-color: rgb(119, 196, 119) ;
+    border-color: #085b00;
+    font-family: 'Roboto', sans-serif;
     margin-bottom: 3rem;    
-}
-.btn :hover {
-background-color:  #44005b ;
-
 }
 
 /*estilos de formulario y mapa de la pagina contacto*/
 .formulario {
-    margin-left: 2rem;
-    font-family: 'Raleway', sans-serif;
+    position: relative;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     text-align: start;
     font-weight: bold;
-    margin-bottom: 1rem;
+    color: rgb(240, 240, 247);
+    margin: 4rem auto;
+    padding: 3rem;
+    background:  linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 007.226)),url(../assets/images/cartaFondo.jpg);
+    width: 30%;
    
 }
 
 .formularioCaja {
 margin-top: 1rem; 
-background-image: url(notasFreud.png);
+margin-bottom: 1rem;
+
 }
 
+
 .mapa{
-    margin: 10px;
+    margin: 2rem auto;
+    width: 30%;
 }
 
 
@@ -225,17 +247,18 @@ background-image: url(notasFreud.png);
 }
 
 /*media querys para celular*/
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px)
     /*header para celular*/
-
+    {
     .tituloHeader {
-        font-size: 1rem;
-        font-weight: bold;
+        font-size: 2rem;
         margin-top: 5%; 
     }
+
     .fotoFreud {
         display: none;  
     }
+
     .logo {
         width: 11rem;  
         height: 3rem ;
@@ -243,13 +266,51 @@ background-image: url(notasFreud.png);
         position: relative;
         text-align: center;
     }
-     .video{
-        width: 100%;
-        max-width: 600px;
+
+    .navbar-toggler{
+        background-color: rgba(46, 187, 187, 0.747);
     }
+   
     .caricatura{
         width: 334px;
         height: 451px;
+    }
+
+    .parrafoFooter{
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;  
+    }
+/*adaptacion de video mapa y formulario*/
+    .video{
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        margin-top: 20%;
+    }
+
+    .video iframe {  
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;}  
+    
+    .mapa{
+        display: flex;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .formulario {
+        background-image: none;
+        display: flex;
+        width: 100%;
+    }
+
+    .video{
+        display: flex;
+        width: 100%;
     }
 }
 
@@ -258,8 +319,7 @@ background-image: url(notasFreud.png);
 @media screen and (min-width: 768px) and (max-width: 1023px) {
    /*header para tablet*/
     .tituloHeader {
-        font-size: 1rem;
-        font-weight: bold;
+        font-size: 2rem;
         margin-top: 10%; 
     }
     .fotoFreud {
