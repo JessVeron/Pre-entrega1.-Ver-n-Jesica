@@ -1,0 +1,81 @@
+
+.fondo {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/imagenFondo.jpg);
+    display:$display-flex;
+    flex-direction: column;
+    position: absolute;
+    align-content: center;
+    justify-content: center;
+    background-size: contain;
+    width: $ancho;
+  
+    
+}
+
+
+
+.video {
+    display: $display-flex;
+    flex-direction: column;
+    position: relative;
+    align-content: center;
+    justify-content: center;
+    width: $ancho;
+    height: 100%;
+     
+}
+
+
+
+.card {
+    display: inline-block;
+    width: 18rem;
+    height: max-content;
+    margin: 4rem;
+    padding: 1rem;
+    border-color: $azul;
+    background-color: $color-secundario;
+    font-family: $fuente-regular;
+    font-size: $tamanio-fuente-chica;
+    text-align: center;
+    color:$color-primario;
+    
+}
+
+.btn {
+    color:$azul;
+    background-color: $color-botones ;
+    border-color: #085b00;
+    font-family: $fuente-regular;
+    margin-bottom: 3rem; 
+}
+
+.formulario {
+    position: relative;
+    box-sizing: border-box;
+    font-family: $fuente-regular;
+    font-size: $tamanio-fuente-chica;
+    text-align: start;
+    font-weight: bold;
+    color: $color-primario;
+    justify-content: space-around;
+    width: $ancho/3;
+    .formularioCaja {
+        margin-top: 1rem; 
+        margin-bottom: 1rem;
+    }
+}
+
+
+.seccionMapa{
+    justify-content: center;
+   .mapa{
+    margin-bottom: 3rem auto;
+    width: $ancho/3;
+   
+   }
+}
+
+.row {
+    margin:0
+}

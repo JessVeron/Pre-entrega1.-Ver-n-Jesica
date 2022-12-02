@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;0,900;1,700&family=Water+Brush&display=swap');
+
+.tituloPrincipal {
+    font-family: $fuente-regular;
+    font-size:$tamanio-fuente-grande;
+    text-align: right;
+    font-weight: 900 bold;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    text-decoration: underline;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    color:$color-primario;
+       
+}
+
+.subtitulo {
+    font-family: $fuente-regular;
+    font-size: $tamanio-fuente-chica;
+    font-weight: 700 bolder;
+    text-align: left;
+    margin-bottom: 2rem;
+    text-decoration: underline;
+    margin-left: 1%;
+    color: $color-primario;
+}
+
+.subtitulo2{
+    font-family: $fuente-regular;
+    font-size: $tamanio-fuente-chica;
+    font-weight: 400 bold;
+}
+
+.parrafo {
+    font-family: $fuente-regular;
+    font-size: $tamanio-fuente-chica;
+    text-align: justify;
+    font-weight: 400;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    color: $color-primario;
+} 

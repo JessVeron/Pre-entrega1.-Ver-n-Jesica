@@ -1,0 +1,25 @@
+{
+  "name": "proyectocoder",
+  "version": "1.0.0",
+  "description": "sitio web Freud proyecto coder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss sass/estilos.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JessVeron/mi_repositorio.git"
+  },
+  "author": "Jesica Verón",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JessVeron/mi_repositorio/issues"
+  },
+  "homepage": "https://github.com/JessVeron/mi_repositorio#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}
