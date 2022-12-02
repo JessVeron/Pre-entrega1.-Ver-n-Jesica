@@ -1,14 +1,29 @@
 $gradiente : linear-gradient(to right top, #051937, #003b5f, #005f77, #008479, #25a667);
 $fuente-cursiva: 'Water Brush', cursive;
 $fuente-regular: 'Roboto', sans-serif;
-$posicion-relativa: relative;
+
 $tamanio-fuente-grande:2rem;
 $tamanio-fuente-chica: 1rem;
+$negrita: bold;
+$mas-negrita: bolder;
+$subrayado: underline;
+
 $color-primario:rgb(246, 246, 201);
 $color-secundario:  rgb(7, 82, 69);
 $color-botones:rgb(119, 196, 119);
 $azul:  rgb(10, 6, 240);
+
+$texto-align-center: center;
+$contenido-centrado: center;
+$contenido-alineado: center;
+
 $ancho: 100%;
 $display-flex: flex;
+$posicion-relativa: relative;
+$posicion-absoluta: absolute;
+$flex-direction-columna: column;
+$margen-intermedio: 3rem;
+$margen-regular: 2rem,
+
 
  

@@ -14,8 +14,8 @@
         width: 11rem;  
         height: 3rem ;
         margin: 4px;
-        position:  relative;
-        text-align: center;
+        position: $posicion-relativa;
+        text-align: $texto-align-center;
 
 }
 .footer{
@@ -33,13 +33,13 @@
 }
 /*adaptacion de video mapa y formulario*/
     .video{
-        position: relative;
+        position: $posicion-relativa;
         padding-bottom: 56.25%;
         height: 0;
         overflow: hidden;
         margin-top: 20%;
         .iFrame {
-            position: absolute;
+            position: $posicion-absoluta;
             top:0;
             left: 0;
             width:$ancho;
@@ -83,10 +83,10 @@
         width: 11rem;  
         height: 3rem ;
         margin: 4px;
-        position:  relative;
-        text-align: center;
+        position:  $posicion-relativa;
+        text-align: $texto-align-center;
     }
-    }   
+}   
 
 
 .footer{

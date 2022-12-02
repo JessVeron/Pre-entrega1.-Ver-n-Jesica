@@ -4,12 +4,12 @@
     font-family: $fuente-regular;
     font-size:$tamanio-fuente-grande;
     text-align: right;
-    font-weight: 900 bold;
-    margin-top: 2rem;
-    margin-bottom: 3rem;
-    text-decoration: underline;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    font-weight: 900 $negrita;
+    margin-top:$margen-regular;
+    margin-bottom: $margen-intermedio;
+    text-decoration: $subrayado;
+    margin-left: $margen-regular;
+    margin-right: $margen-regular;
     color:$color-primario;
        
 }
@@ -17,18 +17,18 @@
 .subtitulo {
     font-family: $fuente-regular;
     font-size: $tamanio-fuente-chica;
-    font-weight: 700 bolder;
+    font-weight: 700 $mas-negrita;
     text-align: left;
-    margin-bottom: 2rem;
-    text-decoration: underline;
-    margin-left: 1%;
+    margin-bottom: $margen-regular;
+    text-decoration: $subrayado;
+    margin-left: $margen-regular;
     color: $color-primario;
 }
 
 .subtitulo2{
     font-family: $fuente-regular;
     font-size: $tamanio-fuente-chica;
-    font-weight: 400 bold;
+    font-weight: 400 $negrita;
 }
 
 .parrafo {

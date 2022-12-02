@@ -2,10 +2,10 @@
 .fondo {
     background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/imagenFondo.jpg);
     display:$display-flex;
-    flex-direction: column;
-    position: absolute;
-    align-content: center;
-    justify-content: center;
+    flex-direction: $flex-direction-columna;
+    position: $posicion-absoluta;
+    align-content: $contenido-alineado;
+    justify-content: $contenido-centrado;
     background-size: contain;
     width: $ancho;
   
@@ -16,10 +16,10 @@
 
 .video {
     display: $display-flex;
-    flex-direction: column;
-    position: relative;
-    align-content: center;
-    justify-content: center;
+    flex-direction: $flex-direction-columna;
+    position: $posicion-relativa;
+    align-content: $contenido-alineado;
+    justify-content: $contenido-centrado;
     width: $ancho;
     height: 100%;
      
@@ -37,7 +37,7 @@
     background-color: $color-secundario;
     font-family: $fuente-regular;
     font-size: $tamanio-fuente-chica;
-    text-align: center;
+    text-align: $texto-align-center;
     color:$color-primario;
     
 }
@@ -47,19 +47,19 @@
     background-color: $color-botones ;
     border-color: #085b00;
     font-family: $fuente-regular;
-    margin-bottom: 3rem; 
+    margin-bottom:$margen-intermedio; 
 }
 
 .formulario {
-    position: relative;
-    box-sizing: border-box;
+    position: $posicion-relativa;
     font-family: $fuente-regular;
     font-size: $tamanio-fuente-chica;
-    text-align: start;
-    font-weight: bold;
+    text-align: $texto-align-center;
+    font-weight: $negrita;
     color: $color-primario;
     justify-content: space-around;
     width: $ancho/3;
+   
     .formularioCaja {
         margin-top: 1rem; 
         margin-bottom: 1rem;
@@ -68,9 +68,9 @@
 
 
 .seccionMapa{
-    justify-content: center;
+    justify-content: $contenido-centrado;
    .mapa{
-    margin-bottom: 3rem auto;
+    margin-bottom: $margen-abajo;
     width: $ancho/3;
    
    }
