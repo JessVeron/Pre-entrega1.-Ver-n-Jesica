@@ -1,4 +1,5 @@
-@mixin flex-direction-center($position){
+
+@mixin flex-direction-center ($position){
     display:$display-flex;
     flex-direction:$flex-direction-columna;
     justify-content:$contenido-centrado;
@@ -7,7 +8,7 @@
     position: $position;
 }
 
-@mixin fuente-general ($alineadoTexto, $decoracion: $subrayado, ) {
+@mixin fuente-general ($alineadoTexto, $decoracion: $subrayado ) {
     font-family: $fuente-regular;
     font-size: $tamanio-fuente-chica;
     text-align: alineadoTexto;

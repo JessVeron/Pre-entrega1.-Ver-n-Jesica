@@ -17,19 +17,19 @@ $ancho: 100%;
 $display-flex: flex;
 $posicion-relativa: relative;
 $posicion-absoluta: absolute;
-$flex-direction-columna: column
+$flex-direction-columna: column;
 
 
 
 /*      mapas      */
-$colores (
+$colores: (
     color-primario:rgb(246, 246, 201),
     color-secundario:  rgb(7, 82, 69),
     color-botones:rgb(119, 196, 119),
     azul:  rgb(10, 6, 240),
-)
+);
 
-margenes (
+$margenes: (
     margen4:4rem,
     margen3: 3rem,
     margen2: 2rem,

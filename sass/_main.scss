@@ -1,15 +1,14 @@
 
 .fondo {
-    
+    @include flex-direction-center (absolute);
     background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/imagenFondo.jpg);
-    @include flex-direction-center ( $posicion-absoluta);
     background-size: contain;
   
 }
 
 
 .video {
-    @include flex-direction-center ($posicion-relativa );
+    @include flex-direction-center (relative);
     height: 100%;
    
 }
