@@ -1,53 +1,41 @@
 
 .fondo {
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/imagenFondo.jpg);
-    display:$display-flex;
-    flex-direction: $flex-direction-columna;
-    position: $posicion-absoluta;
-    align-content: $contenido-alineado;
-    justify-content: $contenido-centrado;
-    background-size: contain;
-    width: $ancho;
-  
     
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/imagenFondo.jpg);
+    @include flex-direction-center ( $posicion-absoluta);
+    background-size: contain;
+  
 }
-
 
 
 .video {
-    display: $display-flex;
-    flex-direction: $flex-direction-columna;
-    position: $posicion-relativa;
-    align-content: $contenido-alineado;
-    justify-content: $contenido-centrado;
-    width: $ancho;
+    @include flex-direction-center ($posicion-relativa );
     height: 100%;
-     
+   
 }
-
 
 
 .card {
     display: inline-block;
     width: 18rem;
     height: max-content;
-    margin: 4rem;
+    margin: map-get($margenes, margen4 );
     padding: 1rem;
-    border-color: $azul;
-    background-color: $color-secundario;
+    border-color: map-get($colores, azul);
+    background-color: map-get($colores,secundario);
     font-family: $fuente-regular;
     font-size: $tamanio-fuente-chica;
     text-align: $texto-align-center;
-    color:$color-primario;
+    color:map-get($colores, color-primario);;
     
 }
 
 .btn {
-    color:$azul;
-    background-color: $color-botones ;
+    color:map-get($colores, azul);
+    background-color: map-get($colores,color-botones) ;
     border-color: #085b00;
     font-family: $fuente-regular;
-    margin-bottom:$margen-intermedio; 
+    margin-bottom:map-get($margenes, margen3 ); 
 }
 
 .formulario {
@@ -56,13 +44,13 @@
     font-size: $tamanio-fuente-chica;
     text-align: $texto-align-center;
     font-weight: $negrita;
-    color: $color-primario;
+    color: map-get($colores, color-primario);
     justify-content: space-around;
     width: $ancho/3;
    
     .formularioCaja {
-        margin-top: 1rem; 
-        margin-bottom: 1rem;
+        margin-top: map-get($margenes, margen2 ); 
+        margin-bottom: map-get($margenes, margen1 );
     }
 }
 
@@ -70,12 +58,11 @@
 .seccionMapa{
     justify-content: $contenido-centrado;
    .mapa{
-    margin-bottom: $margen-abajo;
+    margin-bottom: map-get($margenes, margen3 );
     width: $ancho/3;
-   
    }
 }
 
 .row {
-    margin:0
+    margin:map-get($margenes, margen0 )
 }

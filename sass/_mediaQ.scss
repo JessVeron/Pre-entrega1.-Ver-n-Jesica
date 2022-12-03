@@ -51,7 +51,7 @@
         .mapa{
                 display:$display-flex;
                 width: $ancho;
-                margin-left: 0;
+                margin-left:map-get($margenes, margen0 );
             }
     }
     .formulario {
@@ -100,7 +100,7 @@
     .mapa{
         display:$display-flex;
         width: $ancho;
-        margin-left: 0;
+        margin-left: map-get($margenes, margen0 );
         }
     }
 }

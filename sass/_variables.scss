@@ -8,10 +8,6 @@ $negrita: bold;
 $mas-negrita: bolder;
 $subrayado: underline;
 
-$color-primario:rgb(246, 246, 201);
-$color-secundario:  rgb(7, 82, 69);
-$color-botones:rgb(119, 196, 119);
-$azul:  rgb(10, 6, 240);
 
 $texto-align-center: center;
 $contenido-centrado: center;
@@ -21,9 +17,22 @@ $ancho: 100%;
 $display-flex: flex;
 $posicion-relativa: relative;
 $posicion-absoluta: absolute;
-$flex-direction-columna: column;
-$margen-intermedio: 3rem;
-$margen-regular: 2rem,
+$flex-direction-columna: column
 
 
- 
+
+/*      mapas      */
+$colores (
+    color-primario:rgb(246, 246, 201),
+    color-secundario:  rgb(7, 82, 69),
+    color-botones:rgb(119, 196, 119),
+    azul:  rgb(10, 6, 240),
+)
+
+margenes (
+    margen4:4rem,
+    margen3: 3rem,
+    margen2: 2rem,
+    margen1: 1rem,
+    margen0: 0%,
+)

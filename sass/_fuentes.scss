@@ -1,42 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;0,900;1,700&family=Water+Brush&display=swap');
 
 .tituloPrincipal {
-    font-family: $fuente-regular;
-    font-size:$tamanio-fuente-grande;
-    text-align: right;
+    @include fuente-general (right, $decoracion: $subrayado ); 
     font-weight: 900 $negrita;
-    margin-top:$margen-regular;
-    margin-bottom: $margen-intermedio;
-    text-decoration: $subrayado;
-    margin-left: $margen-regular;
-    margin-right: $margen-regular;
-    color:$color-primario;
-       
+    margin-top:map-get($margenes, margen2 );
+    margin-bottom: map-get($margenes, margen3 );
+    margin-left: map-get($margenes, margen2 );
+    margin-right:map-get($margenes, margen2 );
+   
 }
 
 .subtitulo {
-    font-family: $fuente-regular;
-    font-size: $tamanio-fuente-chica;
+    @include fuente-general (left, $decoracion: $subrayado );
     font-weight: 700 $mas-negrita;
-    text-align: left;
-    margin-bottom: $margen-regular;
-    text-decoration: $subrayado;
-    margin-left: $margen-regular;
-    color: $color-primario;
+    margin-bottom: map-get($margenes, margen2 );
+    margin-left: map-get($margenes, margen2 );
+   
 }
 
 .subtitulo2{
-    font-family: $fuente-regular;
-    font-size: $tamanio-fuente-chica;
-    font-weight: 400 $negrita;
+    @include fuente-general (center, $decoracion: $subrayado );
+    text-decoration: none;
 }
 
 .parrafo {
-    font-family: $fuente-regular;
-    font-size: $tamanio-fuente-chica;
-    text-align: justify;
+    @include fuente-general (justify, $decoracion: $subrayado );
+    text-decoration: none;
     font-weight: 400;
-    margin-left: 3rem;
-    margin-right: 3rem;
-    color: $color-primario;
+    margin-left: map-get($margenes, margen3);
+    margin-right: map-get($margenes, margen3);
+   
 } 

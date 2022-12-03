@@ -1,6 +1,6 @@
 .footer {
     background-image: $gradiente ;
-    color: $color-primario;  
+    color: map-get($colores, color-primario);  
     width: $ancho;
     height: 25vh;
     bottom: 0%;
@@ -8,7 +8,7 @@
     .socialMedia {
         display: $display-flex;
         justify-content: $contenido-centrado;
-        margin-top: 10px ;
+        margin-top: map-get($margenes, margen1 ) ;
         border-radius:10px;
         animation: float infinite 4s ease-in-out;
     }
@@ -17,8 +17,8 @@
         font-size: $tamanio-fuente-grande;
         font-weight: 300;
         text-align: $texto-align-center;
-        margin-bottom: $margen-regular;
-        margin-top: 3rem;
+        margin-bottom: map-get($margenes, margen2 );
+        margin-top: map-get($margenes, margen3 );
     }
 }
 @keyframes float {

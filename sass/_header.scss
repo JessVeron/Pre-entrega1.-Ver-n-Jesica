@@ -8,27 +8,27 @@
         font-family: $fuente-cursiva;
         font-size: 3rem;
         text-align: $texto-align-center;
-        color:$color-primario;
+        color:map-get($colores, color-primario);
         margin-top: 10%; 
     }
     .fotoFreud {
         width: 200px ;
         height: 800 px;
         border-radius: 2rem;
-        margin: 10px;
+        margin: map-get($margenes, margen1 );
         position:  $posicion-relativa;
         float: right;
     }
     .logo {
         width: 19rem;  
         height: 7rem ;
-        margin: 10px;
+        margin: map-get($margenes, margen1);
         position: $posicion-relativa;
         float: left;
         animation: pulse infinite 4s ease-in-out;
     }
     .navbar{
-        background-color:$color-secundario ; 
+        background-color:map-get($colores, color-secundario);
         width: $ancho;
                 
         .nav-link {
@@ -39,9 +39,9 @@
             justify-content: space-around;
         }
         .navbar-toggler {
-            background-color: $color-botones;
-            color:$azul;
-            border-color:$azul ;
+            background-color: map-get($colores, color-botones);
+            color:map-get($colores, azul );
+            border-color:map-get($colores, azul ) ;
            
         }
        
