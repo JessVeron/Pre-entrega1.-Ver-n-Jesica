@@ -8,9 +8,9 @@
     position: $position;
 }
 
-@mixin fuente-general ($alineadoTexto, $decoracion: $subrayado ) {
+@mixin fuente-general ($alineadoTexto, $decoracion: $subrayado, $tamaño: $tamanio-fuente-chica) {
     font-family: $fuente-regular;
-    font-size: $tamanio-fuente-chica;
+    font-size: $tamaño;
     text-align: alineadoTexto;
     text-decoration: $decoracion;
     margin-left: map-get($margenes, margen2 );

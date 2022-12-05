@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;0,900;1,700&family=Water+Brush&display=swap');
 
 .tituloPrincipal {
-    @include fuente-general (right, $decoracion: $subrayado ); 
+    @include fuente-general (right, $decoracion: $subrayado, $tamaño: $tamanio-fuente-chica); 
     font-weight: 900 $negrita;
+    font-size: $tamanio-fuente-grande;
     margin-top:map-get($margenes, margen2 );
     margin-bottom: map-get($margenes, margen3 );
     margin-left: map-get($margenes, margen2 );
@@ -11,7 +12,7 @@
 }
 
 .subtitulo {
-    @include fuente-general (left, $decoracion: $subrayado );
+    @include fuente-general (left, $decoracion: $subrayado, $tamaño: $tamanio-fuente-chica);
     font-weight: 700 $mas-negrita;
     margin-bottom: map-get($margenes, margen2 );
     margin-left: map-get($margenes, margen2 );
@@ -19,12 +20,12 @@
 }
 
 .subtitulo2{
-    @include fuente-general (center, $decoracion: $subrayado );
+    @include fuente-general (center, $decoracion: $subrayado,$tamaño: $tamanio-fuente-chica );
     text-decoration: none;
 }
 
 .parrafo {
-    @include fuente-general (justify, $decoracion: $subrayado );
+    @include fuente-general (justify, $decoracion: $subrayado, $tamaño: $tamanio-fuente-chica );
     text-decoration: none;
     font-weight: 400;
     margin-left: map-get($margenes, margen3);

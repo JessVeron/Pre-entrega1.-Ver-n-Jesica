@@ -33,17 +33,19 @@
     animation: pulse infinite 4s ease-in-out; }
   .header .navbar {
     background-color: #075245;
-    width: 100%; }
+    width: 100%;
+    justify-content: space-around; }
     .header .navbar .nav-link {
       font-family: "Roboto", sans-serif;
       font-weight: 400 bolder;
       text-transform: uppercase;
       padding-left: 2%;
-      justify-content: space-around; }
-    .header .navbar .navbar-toggler {
-      background-color: #77c477;
-      color: #0a06f0;
-      border-color: #0a06f0; }
+      margin-left: 4rem;
+      margin-right: 4rem; }
+      .header .navbar .nav-link .navbar-toggler {
+        background-color: #77c477;
+        color: #0a06f0;
+        border-color: #0a06f0; }
 
 @keyframes pulse {
   0% {
@@ -76,9 +78,10 @@
   display: inline-block;
   width: 18rem;
   height: max-content;
-  margin: 4rem;
+  margin: 3rem;
   padding: 1rem;
   border-color: #0a06f0;
+  background-color: #075245;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   text-align: center;
@@ -93,25 +96,31 @@
 
 .formulario {
   position: relative;
+  margin: auto;
+  background-image: url(../assets/images/cartaFondo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   text-align: center;
   font-weight: bold;
-  color: #f6f6c9;
+  color: #075245;
   justify-content: space-around;
-  width: 33.33333%; }
+  width: 33.33333%;
+  margin-bottom: 5rem; }
   .formulario .formularioCaja {
     margin-top: 2rem;
     margin-bottom: 1rem; }
 
 .seccionMapa {
-  justify-content: center; }
+  justify-content: center;
+  margin-bottom: 5rem; }
   .seccionMapa .mapa {
-    margin-bottom: 3rem;
-    width: 33.33333%; }
+    width: 50%; }
 
 .row {
-  margin: 0%; }
+  margin: 0%;
+  padding: 0; }
 
 .tituloPrincipal {
   font-family: "Roboto", sans-serif;
@@ -121,6 +130,7 @@
   margin-left: 2rem;
   color: #f6f6c9;
   font-weight: 900 bold;
+  font-size: 2rem;
   margin-top: 2rem;
   margin-bottom: 3rem;
   margin-left: 2rem;
@@ -164,6 +174,7 @@
   width: 100%;
   height: 25vh;
   bottom: 0%;
+  margin-top: 3rem;
   position: relative; }
   .footer .socialMedia {
     display: flex;
@@ -201,10 +212,14 @@
     margin: 4px;
     position: relative;
     text-align: center; }
-  .header .footer .parrafoFooter {
+  .header .navbar .navbar-toggler {
+    background-color: #77c477;
+    color: #0a06f0;
+    border-color: #0a06f0; }
+  .footer .parrafoFooter {
     font-family: "Roboto", sans-serif;
     font-size: 1rem; }
-  .header .caricatura {
+  .caricatura {
     display: flex;
     margin: auto;
     width: 334px;
@@ -224,9 +239,8 @@
       height: 100%; } }
 
 .seccionMapa .mapa {
-  display: flex;
-  width: 100%;
-  margin-left: 0%; }
+  display: block;
+  margin: 0 auto; }
 
 .formulario {
   display: flex;
@@ -250,6 +264,10 @@
     margin: 4px;
     position: relative;
     text-align: center; }
+  .caricatura {
+    display: flex;
+    margin: auto;
+    align-items: center; }
   .footer .parrafoFooter {
     font-family: "Roboto", sans-serif;
     font-size: 1rem; }

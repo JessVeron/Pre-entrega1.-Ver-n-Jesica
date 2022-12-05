@@ -30,21 +30,23 @@
     .navbar{
         background-color:map-get($colores, color-secundario);
         width: $ancho;
-                
+        justify-content: space-around;
+        
         .nav-link {
             font-family:$fuente-regular;
             font-weight: 400 $mas-negrita;
             text-transform: uppercase;
             padding-left: 2%;
-            justify-content: space-around;
-        }
+            margin-left: map-get($margenes, margen4 );
+            margin-right: map-get($margenes, margen4 );
         .navbar-toggler {
             background-color: map-get($colores, color-botones);
             color:map-get($colores, azul );
             border-color:map-get($colores, azul ) ;
            
         }
-       
+        }
+
     }
     
 }

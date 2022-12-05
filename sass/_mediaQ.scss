@@ -16,21 +16,31 @@
         margin: 4px;
         position: $posicion-relativa;
         text-align: $texto-align-center;
-
+        }
+    .navbar {
+        .navbar-toggler {
+            background-color: map-get($colores, color-botones);
+            color:map-get($colores, azul );
+            border-color:map-get($colores, azul ) ;
+        }       
+    }
 }
+
 .footer{
     .parrafoFooter{
         font-family: $fuente-regular;
         font-size: $tamanio-fuente-chica;  
     }
 }
-    .caricatura{
+    
+.caricatura{
         display: $display-flex;
         margin: auto;
         width: 334px;
         height: 451px;
     }
-}
+
+
 /*adaptacion de video mapa y formulario*/
     .video{
         position: $posicion-relativa;
@@ -49,14 +59,14 @@
 
     .seccionMapa {
         .mapa{
-                display:$display-flex;
-                width: $ancho;
-                margin-left:map-get($margenes, margen0 );
-            }
+           display: block;
+           margin:0 auto;
+        }
     }
     .formulario {
         display: $display-flex;
         width: $ancho;
+       
     }
 
    
@@ -88,6 +98,11 @@
     }
 }   
 
+.caricatura{
+    display: $display-flex;
+    margin: auto;
+   align-items: center;
+}
 
 .footer{
     .parrafoFooter{

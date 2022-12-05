@@ -18,10 +18,10 @@
     display: inline-block;
     width: 18rem;
     height: max-content;
-    margin: map-get($margenes, margen4 );
+    margin: map-get($margenes, margen3 );
     padding: 1rem;
     border-color: map-get($colores, azul);
-    background-color: map-get($colores,secundario);
+    background-color: map-get($colores, color-secundario);
     font-family: $fuente-regular;
     font-size: $tamanio-fuente-chica;
     text-align: $texto-align-center;
@@ -39,14 +39,18 @@
 
 .formulario {
     position: $posicion-relativa;
+    margin: auto;
+    background-image: url(../assets/images/cartaFondo.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
     font-family: $fuente-regular;
     font-size: $tamanio-fuente-chica;
     text-align: $texto-align-center;
     font-weight: $negrita;
-    color: map-get($colores, color-primario);
+    color: map-get($colores, color-secundario);
     justify-content: space-around;
     width: $ancho/3;
-   
+    margin-bottom: 5rem;
     .formularioCaja {
         margin-top: map-get($margenes, margen2 ); 
         margin-bottom: map-get($margenes, margen1 );
@@ -56,12 +60,13 @@
 
 .seccionMapa{
     justify-content: $contenido-centrado;
-   .mapa{
-    margin-bottom: map-get($margenes, margen3 );
-    width: $ancho/3;
+    margin-bottom: 5rem;
+    .mapa{
+     width: $ancho/2;
    }
 }
 
 .row {
-    margin:map-get($margenes, margen0 )
+    margin:map-get($margenes, margen0 );
+    padding: 0;
 }
