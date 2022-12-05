@@ -59,7 +59,9 @@
 
 
 .seccionMapa{
+    display: flex;
     justify-content: $contenido-centrado;
+    align-items: $contenido-alineado;
     margin-bottom: 5rem;
     .mapa{
      width: $ancho/2;

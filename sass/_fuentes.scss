@@ -13,7 +13,8 @@
 
 .subtitulo {
     @include fuente-general (left, $decoracion: $subrayado, $tamaño: $tamanio-fuente-chica);
-    font-weight: 700 $mas-negrita;
+    font-weight: 700; 
+    font-size: $tamanio-fuente-mediana;
     margin-bottom: map-get($margenes, margen2 );
     margin-left: map-get($margenes, margen2 );
    
@@ -21,6 +22,7 @@
 
 .subtitulo2{
     @include fuente-general (center, $decoracion: $subrayado,$tamaño: $tamanio-fuente-chica );
+    font-size: $tamanio-fuente-mediana;
     text-decoration: none;
 }
 

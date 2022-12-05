@@ -113,7 +113,9 @@
     margin-bottom: 1rem; }
 
 .seccionMapa {
+  display: flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: 5rem; }
   .seccionMapa .mapa {
     width: 50%; }
@@ -125,12 +127,12 @@
 .tituloPrincipal {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
-  text-align: alineadoTexto;
+  text-align: right;
   text-decoration: underline;
   margin-left: 2rem;
   color: #f6f6c9;
   font-weight: 900 bold;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-top: 2rem;
   margin-bottom: 3rem;
   margin-left: 2rem;
@@ -139,27 +141,29 @@
 .subtitulo {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
-  text-align: alineadoTexto;
+  text-align: left;
   text-decoration: underline;
   margin-left: 2rem;
   color: #f6f6c9;
-  font-weight: 700 bolder;
+  font-weight: 700;
+  font-size: 1.7rem;
   margin-bottom: 2rem;
   margin-left: 2rem; }
 
 .subtitulo2 {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
-  text-align: alineadoTexto;
+  text-align: center;
   text-decoration: underline;
   margin-left: 2rem;
   color: #f6f6c9;
+  font-size: 1.7rem;
   text-decoration: none; }
 
 .parrafo {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
-  text-align: alineadoTexto;
+  text-align: justify;
   text-decoration: underline;
   margin-left: 2rem;
   color: #f6f6c9;
@@ -184,7 +188,7 @@
     animation: float infinite 4s ease-in-out; }
   .footer .parrafoFooter {
     font-family: "Water Brush", cursive;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 300;
     text-align: center;
     margin-bottom: 2rem;
@@ -202,13 +206,13 @@
 @media screen and (max-width: 767px) {
   /*header para celular*/
   .header .tituloHeader {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-top: 5%; }
   .header .fotoFreud {
     display: none; }
   .header .logo {
     width: 11rem;
-    height: 3rem;
+    height: 4rem;
     margin: 4px;
     position: relative;
     text-align: center; }
@@ -250,7 +254,7 @@
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   /*header para tablet*/
   .header .tituloHeader {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-top: 5%; }
   .header .fotoFreud {
     width: 180px;
@@ -264,6 +268,10 @@
     margin: 4px;
     position: relative;
     text-align: center; }
+  .header .navbar .navbar-toggler {
+    background-color: #77c477;
+    color: #0a06f0;
+    border-color: #0a06f0; }
   .caricatura {
     display: flex;
     margin: auto;

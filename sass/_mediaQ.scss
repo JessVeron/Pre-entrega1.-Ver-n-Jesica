@@ -12,7 +12,7 @@
         }
     .logo{
         width: 11rem;  
-        height: 3rem ;
+        height: 4rem ;
         margin: 4px;
         position: $posicion-relativa;
         text-align: $texto-align-center;
@@ -96,7 +96,15 @@
         position:  $posicion-relativa;
         text-align: $texto-align-center;
     }
+    .navbar {
+        .navbar-toggler {
+            background-color: map-get($colores, color-botones);
+            color:map-get($colores, azul );
+            border-color:map-get($colores, azul ) ;
+        }      
+    }
 }   
+
 
 .caricatura{
     display: $display-flex;
