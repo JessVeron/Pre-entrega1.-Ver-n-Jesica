@@ -33,6 +33,7 @@
         justify-content: space-around;
         
         .nav-link {
+            color:map-get($colores, color-primario);
             font-family:$fuente-regular;
             font-weight: 400 $mas-negrita;
             text-transform: uppercase;

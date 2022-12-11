@@ -69,7 +69,10 @@
        
     }
 
-   
+   .card{
+    display:$display-flex;
+    margin: 1rem auto;
+   }
 
 
 /*media querys para tablet*/
@@ -117,7 +120,7 @@
         font-family: $fuente-regular;
         font-size: $tamanio-fuente-chica;  
     }
-    }    
+}    
 
 .seccionMapa {
     .mapa{
