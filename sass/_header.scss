@@ -18,6 +18,7 @@
         margin: map-get($margenes, margen1 );
         position:  $posicion-relativa;
         float: right;
+        animation-duration: 2sec;
     }
     .logo {
         width: 19rem;  
@@ -63,4 +64,6 @@
         {transform: translateZ(0);
     
     }    
-    }
+}
+
+

@@ -2,24 +2,23 @@
     background-image: $gradiente ;
     color: map-get($colores, color-primario);  
     width: $ancho;
-    height: 25vh;
+    height: 20vh;
     bottom: 0%;
-    margin-top: map-get($margenes, margen3 );
     position:  $posicion-relativa;
     .socialMedia {
         display: $display-flex;
-        justify-content: $contenido-centrado;
+        justify-content: space-between;
+        margin-left: 10px;
         margin-top: map-get($margenes, margen1 ) ;
         border-radius:10px;
         animation: float infinite 4s ease-in-out;
     } 
     .parrafoFooter {
         font-family: $fuente-cursiva;
-        font-size: $tamanio-fuente-grande;
-        font-weight: 300;
+        font-size: $tamanio-fuente-mediana;
         text-align: $texto-align-center;
-        margin-bottom: map-get($margenes, margen2 );
-        margin-top: map-get($margenes, margen3 );
+        margin-bottom: map-get($margenes, margen1 );
+        margin-top: map-get($margenes, margen2 );
     }
 }
 @keyframes float {
