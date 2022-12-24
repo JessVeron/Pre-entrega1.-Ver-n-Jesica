@@ -61,6 +61,8 @@
         .mapa{
            display: block;
            margin:0 auto;
+           width: 300px;
+           height: 300px;
         }
     }
     .formulario {
@@ -74,7 +76,25 @@
     margin: 1rem auto;
    }
 
-  
+   .fondoSecundario{
+       .gridcontenedor{
+        font-size: $tamanio-fuente-mediana;
+       .fotoError {
+            width: 200px;
+            height: 200px;
+        }
+       }
+   }
+/* parrafos*/
+
+.parrafo {
+    @include fuente-general (justify, $decoracion: $subrayado, $tamaño: $tamanio-fuente-chica );
+    text-decoration: none;
+    font-weight: 400;
+    margin-left: map-get($margenes, margen1);
+    margin-right: map-get($margenes, margen1);
+   
+} 
 
 /*media querys para tablet*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -126,8 +146,10 @@
 .seccionMapa {
     .mapa{
         display:$display-flex;
-        width: $ancho;
+        width: 300px;
+        height:300px ;
         margin-left: map-get($margenes, margen0 );
         }
     }
 }
+
