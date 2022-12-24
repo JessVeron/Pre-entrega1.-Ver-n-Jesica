@@ -116,7 +116,7 @@
         text-align: $texto-align-center;
         justify-content: $contenido-centrado;
         align-content: $contenido-alineado;
-        
+        margin-top: map-get($margenes, margen1 );
        
     }
       

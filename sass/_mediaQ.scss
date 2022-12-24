@@ -79,7 +79,7 @@
    .fondoSecundario{
        .gridcontenedor{
         font-size: $tamanio-fuente-mediana;
-       .fotoError {
+       .parrafoError .fotoError {
             width: 200px;
             height: 200px;
         }
@@ -146,9 +146,10 @@
 .seccionMapa {
     .mapa{
         display:$display-flex;
-        width: 300px;
-        height:300px ;
-        margin-left: map-get($margenes, margen0 );
+        width: 250px;
+        height: 250px;
+        align-content: $contenido-alineado;
+
         }
     }
 }
