@@ -69,11 +69,11 @@
         background-color: #005f77;
         border-radius: 2rem;
         margin-top: map-get($margenes, margen1 ); 
-        margin-bottom: map-get($margenes, margen1 );
+        margin-bottom: map-get($margenes, margen3 );
         font-family: $fuente-regular;
         font-size: $tamanio-fuente-chica;
         font-weight: $negrita;
-        color:map-get($colores, color-primario );
+        color:map-get($colores, color-primario );git border-start-end-radius: ;
         
             .left{
             background: url("../assets/images/cartaFondo.jpg") no-repeat center;
