@@ -98,31 +98,11 @@
 .btn {
   color: #0a06f0;
   background-color: #77c477;
-  border-color: #085b00;
+  border-color: #005f77;
   font-family: "Roboto", sans-serif;
   margin-bottom: 3rem; }
 
 /*página contacto*/
-/*.formulario {
-    position: $posicion-relativa;
-    margin: auto;
-    background-image: url(../assets/images/cartaFondo.jpg) ;
-    background-repeat: no-repeat;
-    background-position:center;
-    font-family: $fuente-regular;
-    font-size: $tamanio-fuente-chica;
-    text-align: $texto-align-center;
-    font-weight: $negrita;
-    color: map-get($colores, color-secundario);
-    justify-content: space-around;
-    width:100% /3;
-    margin-bottom: 5rem;
-    .formularioCaja {
-        margin-top: map-get($margenes, margen1 ); 
-        margin-bottom: map-get($margenes, margen1 );
-       
-    }
-}*/
 .formulario {
   position: relative;
   width: 100%;
@@ -137,14 +117,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: center;
-    background-color: #075245;
+    background-color: #005f77;
     border-radius: 2rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
     font-weight: bold;
-    color: #0a06f0; }
+    color: #f6f6c9; }
     .formulario .contact-box .left {
       background: url("../assets/images/cartaFondo.jpg") no-repeat center;
       background-size: cover;
@@ -306,7 +286,8 @@
   display: block;
   margin: 0 auto;
   width: 300px;
-  height: 300px; }
+  height: 300px;
+  align-content: center; }
 
 .formulario {
   display: flex;
@@ -369,3 +350,7 @@
     width: 250px;
     height: 250px;
     align-content: center; } }
+
+.formulario {
+  height: 250px;
+  grid-area: auto; }

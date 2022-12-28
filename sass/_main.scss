@@ -41,7 +41,7 @@
 .btn {
     color:map-get($colores, azul);
     background-color: map-get($colores,color-botones) ;
-    border-color: #085b00;
+    border-color:#005f77;
     font-family: $fuente-regular;
     margin-bottom:map-get($margenes, margen3 ); 
 }
@@ -51,26 +51,6 @@
 /*página contacto*/
 
 
-/*.formulario {
-    position: $posicion-relativa;
-    margin: auto;
-    background-image: url(../assets/images/cartaFondo.jpg) ;
-    background-repeat: no-repeat;
-    background-position:center;
-    font-family: $fuente-regular;
-    font-size: $tamanio-fuente-chica;
-    text-align: $texto-align-center;
-    font-weight: $negrita;
-    color: map-get($colores, color-secundario);
-    justify-content: space-around;
-    width:100% /3;
-    margin-bottom: 5rem;
-    .formularioCaja {
-        margin-top: map-get($margenes, margen1 ); 
-        margin-bottom: map-get($margenes, margen1 );
-       
-    }
-}*/
 .formulario {
     position:$posicion-relativa;
     width: 100%;
@@ -86,14 +66,14 @@
         display:grid;
         grid-template-columns: 1fr 1fr;
         text-align: $texto-align-center;
-        background-color: map-get($colores, color-secundario );
+        background-color: #005f77;
         border-radius: 2rem;
         margin-top: map-get($margenes, margen1 ); 
         margin-bottom: map-get($margenes, margen1 );
         font-family: $fuente-regular;
         font-size: $tamanio-fuente-chica;
         font-weight: $negrita;
-        color: map-get($colores, azul );
+        color:map-get($colores, color-primario );
         
             .left{
             background: url("../assets/images/cartaFondo.jpg") no-repeat center;
@@ -101,7 +81,7 @@
             height: 100%;
             border-top-left-radius: 2rem;
             border-bottom-left-radius: 2rem;
-        }
+            }
 
             .right{
                  padding: 25px 40px;
