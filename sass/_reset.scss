@@ -4,4 +4,7 @@
     box-sizing: border-box;
 }
 
-
+.row {
+    margin:map-get($margenes, margen0 );
+    padding: 0;
+}

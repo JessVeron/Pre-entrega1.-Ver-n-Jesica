@@ -21,20 +21,37 @@
 
 
 .card {
-    display: inline-block;
+    display:table;
     width: 16rem;
+    height: 33rem;
     margin: map-get($margenes, margen3 );
+    margin-bottom: map-get($margenes, margen1 );
     padding: 1rem;
     border-color: map-get($colores, azul);
     background-color: map-get($colores, color-secundario);
     font-family: $fuente-regular;
     font-size: $tamanio-fuente-chica;
     text-align: $texto-align-center;
+    align-items: $contenido-alineado;
     color:map-get($colores, color-primario);
     justify-content: space-around;
-    align-self: center;
+    justify-items: center;
     cursor: pointer;
+    display: table-cell;
+    vertical-align: middle;
+    .card-img-top{
+        object-fit: cover;
+        overflow: hidden;
+    }
+    .card-title{
+        margin-top: map-get($margenes, margen2 );
+    }
+    .card-text{
+        margin-top: map-get($margenes, margen1 );
+   }
+
 }
+
 
 
 
@@ -43,7 +60,8 @@
     background-color: map-get($colores,color-botones) ;
     border-color:#005f77;
     font-family: $fuente-regular;
-    margin-bottom:map-get($margenes, margen3 ); 
+    margin-bottom:map-get($margenes, margen2 ); 
+    
 }
 
 
@@ -73,7 +91,7 @@
         font-family: $fuente-regular;
         font-size: $tamanio-fuente-chica;
         font-weight: $negrita;
-        color:map-get($colores, color-primario );git border-start-end-radius: ;
+        color:map-get($colores, color-primario ); 
         
             .left{
             background: url("../assets/images/cartaFondo.jpg") no-repeat center;
@@ -99,10 +117,7 @@
 
 }
 
-.row {
-    margin:map-get($margenes, margen0 );
-    padding: 0;
-}
+
 
 
 
@@ -115,11 +130,10 @@
     background-image: $gradiente ;
     
     .gridContenedor{
-   
     display: grid;
     height: 100vh;
     grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit);
+    grid-template-columns: 1fr 1fr;
     font-family:  $fuente-cursiva;
     text-align: $texto-align-center;
     justify-content: $contenido-centrado;

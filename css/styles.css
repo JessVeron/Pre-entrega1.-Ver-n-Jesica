@@ -6,6 +6,10 @@
   padding: 0;
   box-sizing: border-box; }
 
+.row {
+  margin: 0%;
+  padding: 0; }
+
 .header {
   background-image: linear-gradient(to right top, #051937, #003b5f, #005f77, #008479, #25a667);
   top: 0px;
@@ -81,26 +85,38 @@
 
 /*páginas cobras y tienda*/
 .card {
-  display: inline-block;
+  display: table;
   width: 16rem;
+  height: 33rem;
   margin: 3rem;
+  margin-bottom: 1rem;
   padding: 1rem;
   border-color: #0a06f0;
   background-color: #075245;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   text-align: center;
+  align-items: center;
   color: #f6f6c9;
   justify-content: space-around;
-  align-self: center;
-  cursor: pointer; }
+  justify-items: center;
+  cursor: pointer;
+  display: table-cell;
+  vertical-align: middle; }
+  .card .card-img-top {
+    object-fit: cover;
+    overflow: hidden; }
+  .card .card-title {
+    margin-top: 2rem; }
+  .card .card-text {
+    margin-top: 1rem; }
 
 .btn {
   color: #0a06f0;
   background-color: #77c477;
   border-color: #005f77;
   font-family: "Roboto", sans-serif;
-  margin-bottom: 3rem; }
+  margin-bottom: 2rem; }
 
 /*página contacto*/
 .formulario {
@@ -140,10 +156,6 @@
         .formulario .contact-box .right .field .suscribite {
           margin-bottom: 1rem; }
 
-.row {
-  margin: 0%;
-  padding: 0; }
-
 /*página error*/
 .fondoSecundario {
   background-image: linear-gradient(to right top, #051937, #003b5f, #005f77, #008479, #25a667); }
@@ -151,7 +163,7 @@
     display: grid;
     height: 100vh;
     grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit);
+    grid-template-columns: 1fr 1fr;
     font-family: "Water Brush", cursive;
     text-align: center;
     justify-content: center;
@@ -285,17 +297,22 @@
 .seccionMapa .mapa {
   display: block;
   margin: 0 auto;
-  width: 300px;
-  height: 300px;
-  align-content: center; }
+  width: 250px;
+  height: 250px;
+  justify-content: space-around; }
 
-.formulario {
-  display: flex;
-  width: 100%; }
+.contact-box {
+  grid-template-columns: 1fr; }
+  .contact-box .left {
+    background-size: cover;
+    height: 100%; }
+  .contact-box .right {
+    padding: 25px 20px; }
 
 .card {
   display: flex;
-  margin: 1rem auto; }
+  margin: 1rem auto;
+  height: fit-content; }
 
 .fondoSecundario .gridcontenedor {
   font-size: 1.7rem; }
@@ -313,7 +330,7 @@
   color: #f6f6c9;
   text-decoration: none;
   font-weight: 400;
-  margin-left: 1rem;
+  margin-left: 2rem;
   margin-right: 1rem; }
 
 /*media querys para tablet*/
@@ -346,11 +363,24 @@
     font-family: "Roboto", sans-serif;
     font-size: 1rem; }
   .seccionMapa .mapa {
-    display: flex;
     width: 250px;
     height: 250px;
-    align-content: center; } }
+    justify-content: center;
+    align-content: center;
+    margin-left: 5rem; } }
+
+.card {
+  height: fit-content; }
 
 .formulario {
-  height: 250px;
-  grid-area: auto; }
+  line-height: none;
+  height: fit-content; }
+  .formulario .contenedorMain {
+    padding: 20px; }
+    .formulario .contenedorMain .contact-box {
+      grid-template-columns: 1fr; }
+      .formulario .contenedorMain .contact-box .left {
+        background-size: cover;
+        height: 100%; }
+      .formulario .contenedorMain .contact-box .right {
+        padding: 25px 20px; }

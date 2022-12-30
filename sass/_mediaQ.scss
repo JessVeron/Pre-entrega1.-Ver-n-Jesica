@@ -42,57 +42,66 @@
 
 
 /*adaptacion de video mapa y formulario*/
-    .video{
-        position: $posicion-relativa;
-        padding-bottom: 56.25%;
-        height: 0;
-        overflow: hidden;
-        margin-top: 20%;
-        .iFrame {
-            position: $posicion-absoluta;
-            top:0;
-            left: 0;
-            width:$ancho;
-            height: 100%;}  
-        }
+ .video{
+    position: $posicion-relativa;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin-top: 20%;
+    .iFrame {
+        position: $posicion-absoluta;
+        top:0;
+        left: 0;
+        width:$ancho;
+        height: 100%;}  
     }
+}
 
-    .seccionMapa {
-        .mapa{
-           display: block;
-           margin:0 auto;
-           width: 300px;
-           height: 300px;
-           align-content: $contenido-alineado;
-        }
+.seccionMapa {
+    .mapa{
+       display: block;
+       margin:0 auto;
+       width: 250px;
+       height: 250px;
+       justify-content: space-around;
+     }
+}
+    
+.contact-box{
+    grid-template-columns: 1fr;
+    .left{
+        background-size: cover;
+        height: 100%;
     }
-    .formulario {
-        display: $display-flex;
-        width: $ancho;
-       
+    .right{
+        padding: 25px 20px;
     }
+}
 
-   .card{
+   
+
+.card{
     display:$display-flex;
     margin: 1rem auto;
-   }
+    height: fit-content;
+}
 
-   .fondoSecundario{
-       .gridcontenedor{
+.fondoSecundario{
+    .gridcontenedor{
         font-size: $tamanio-fuente-mediana;
-       .parrafoError .fotoError {
-            width: 200px;
-            height: 200px;
-        }
-       }
-   }
+    .parrafoError .fotoError {
+        width: 200px;
+        height: 200px;
+     }
+    }
+}
 /* parrafos*/
 
 .parrafo {
     @include fuente-general (justify, $decoracion: $subrayado, $tamaño: $tamanio-fuente-chica );
     text-decoration: none;
     font-weight: 400;
-    margin-left: map-get($margenes, margen1);
+    margin-left: map-get($margenes, margen2);
     margin-right: map-get($margenes, margen1);
    
 } 
@@ -147,16 +156,36 @@
 
 .seccionMapa {
     .mapa{
-        display:$display-flex;
         width: 250px;
         height: 250px;
+        justify-content: $contenido-centrado;
         align-content: $contenido-alineado;
-        
+        margin-left: 5rem;
         }
     }
 }
 
-.formulario{
-    height: 250px;
-    grid-area: auto;    
+.card{
+    height: fit-content;
 }
+
+.formulario{
+    line-height: none;
+    height: fit-content;
+    .contenedorMain{
+        padding: 20px; 
+        .contact-box{
+            grid-template-columns: 1fr;
+            .left{
+                background-size: cover;
+                height: 100%;
+            }
+            .right{
+                padding: 25px 20px;
+            }
+        }
+     }
+}
+
+  
+ 
