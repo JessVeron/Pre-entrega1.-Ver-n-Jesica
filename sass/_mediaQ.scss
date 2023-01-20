@@ -41,43 +41,6 @@
     }
 
 
-/*adaptacion de video mapa y formulario*/
- .video{
-    position: $posicion-relativa;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    margin-top: 20%;
-    .iFrame {
-        position: $posicion-absoluta;
-        top:0;
-        left: 0;
-        width:$ancho;
-        height: 100%;}  
-    }
-}
-
-.seccionMapa {
-    .mapa{
-       display: block;
-       margin:0 auto;
-       width: 250px;
-       height: 250px;
-       justify-content: space-around;
-     }
-}
-    
-.contact-box{
-    grid-template-columns: 1fr;
-    .left{
-        background-size: cover;
-        height: 100%;
-    }
-    .right{
-        padding: 25px 20px;
-    }
-}
-
    
 
 .card{
@@ -86,15 +49,7 @@
     height: fit-content;
 }
 
-.fondoSecundario{
-    .gridcontenedor{
-        font-size: $tamanio-fuente-mediana;
-    .parrafoError .fotoError {
-        width: 200px;
-        height: 200px;
-     }
-    }
-}
+
 /* parrafos*/
 
 .parrafo {
@@ -105,6 +60,7 @@
     margin-right: map-get($margenes, margen1);
    
 } 
+}
 
 /*media querys para tablet*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -154,38 +110,9 @@
     }
 }    
 
-.seccionMapa {
-    .mapa{
-        width: 250px;
-        height: 250px;
-        justify-content: $contenido-centrado;
-        align-content: $contenido-alineado;
-        margin-left: 5rem;
-        }
-    }
-}
 
 .card{
     height: fit-content;
 }
 
-.formulario{
-    line-height: none;
-    height: fit-content;
-    .contenedorMain{
-        padding: 20px; 
-        .contact-box{
-            grid-template-columns: 1fr;
-            .left{
-                background-size: cover;
-                height: 100%;
-            }
-            .right{
-                padding: 25px 20px;
-            }
-        }
-     }
 }
-
-  
- 

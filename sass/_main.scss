@@ -9,13 +9,6 @@
   
 }
 
-/*página principal*/
-
-.video {
-    @include flex-direction-center (relative);
-    height: 100%;
-   
-}
 
 /*páginas cobras y tienda*/
 
@@ -54,7 +47,6 @@
 
 
 
-
 .btn {
     color:map-get($colores, azul);
     background-color: map-get($colores,color-botones) ;
@@ -66,88 +58,3 @@
 
 
 
-/*página contacto*/
-
-
-.formulario {
-    position:$posicion-relativa;
-    width: 100%;
-    height: 60vh;
-    display:flex;   
-    justify-content: $contenido-centrado;
-    align-items:$contenido-alineado;
-    margin-top:2rem;
-    margin-bottom: 3rem;
- 
-    .contact-box{
-        max-width: 70%;
-        display:grid;
-        grid-template-columns: 1fr 1fr;
-        text-align: $texto-align-center;
-        background-color: #005f77;
-        border-radius: 2rem;
-        margin-top: map-get($margenes, margen1 ); 
-        margin-bottom: map-get($margenes, margen3 );
-        font-family: $fuente-regular;
-        font-size: $tamanio-fuente-chica;
-        font-weight: $negrita;
-        color:map-get($colores, color-primario ); 
-        
-            .left{
-            background: url("../assets/images/cartaFondo.jpg") no-repeat center;
-            background-size: cover;
-            height: 100%;
-            border-top-left-radius: 2rem;
-            border-bottom-left-radius: 2rem;
-            }
-
-            .right{
-                 padding: 25px 40px;
-                .field {
-                    margin-top: map-get($margenes, margen1 ); 
-                    margin-bottom: map-get($margenes, margen1 );
-                    background-color: map-get($colores, color-primario );
-                    .suscribite {
-                        margin-bottom: map-get($margenes, margen1 );
-                    }
-            
-                }
-            }
-    }
-
-}
-
-
-
-
-
-
-/*página error*/
-
-
-
-.fondoSecundario {
-    background-image: $gradiente ;
-    
-    .gridContenedor{
-    display: grid;
-    height: 100vh;
-    grid-gap: 1rem;
-    grid-template-columns: 1fr 1fr;
-    font-family:  $fuente-cursiva;
-    text-align: $texto-align-center;
-    justify-content: $contenido-centrado;
-    font-size: $tamanio-fuente-grande ;
-    color: map-get($colores, color-primario);
-    .parrafoError .fotoError {
-        display: grid;
-        place-items: center;
-        text-align: $texto-align-center;
-        justify-content: $contenido-centrado;
-        align-content: $contenido-alineado;
-        margin-top: map-get($margenes, margen1 );
-       
-    }
-      
-  }
-}
