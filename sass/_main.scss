@@ -10,13 +10,13 @@
 }
 
 
-/*páginas cobras y tienda*/
+/*página tienda*/
 
 
 .card {
     display:table;
     width: 16rem;
-    height: 33rem;
+    height: 30rem;
     margin: map-get($margenes, margen3 );
     margin-bottom: map-get($margenes, margen1 );
     padding: 1rem;
@@ -30,8 +30,8 @@
     justify-content: space-around;
     justify-items: center;
     cursor: pointer;
-    display: table-cell;
-    vertical-align: middle;
+    display: center;
+    vertical-align: center;
     .card-img-top{
         object-fit: cover;
         overflow: hidden;

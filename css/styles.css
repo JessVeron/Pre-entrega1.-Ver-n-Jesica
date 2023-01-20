@@ -13,7 +13,6 @@
 .header {
   background-image: linear-gradient(to right top, #051937, #003b5f, #005f77, #008479, #25a667);
   top: 0px;
-  position: sticky;
   z-index: 10;
   opacity: 95%; }
   .header .tituloHeader {
@@ -73,21 +72,11 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.63)), url(../assets/images/imagenFondo.jpg);
   background-size: contain; }
 
-/*página principal*/
-.video {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  width: 100%;
-  position: relative;
-  height: 100%; }
-
-/*páginas cobras y tienda*/
+/*página tienda*/
 .card {
   display: table;
   width: 16rem;
-  height: 33rem;
+  height: 30rem;
   margin: 3rem;
   margin-bottom: 1rem;
   padding: 1rem;
@@ -101,8 +90,8 @@
   justify-content: space-around;
   justify-items: center;
   cursor: pointer;
-  display: table-cell;
-  vertical-align: middle; }
+  display: center;
+  vertical-align: center; }
   .card .card-img-top {
     object-fit: cover;
     overflow: hidden; }
@@ -117,65 +106,6 @@
   border-color: #005f77;
   font-family: "Roboto", sans-serif;
   margin-bottom: 2rem; }
-
-/*página contacto*/
-.formulario {
-  position: relative;
-  width: 100%;
-  height: 60vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
-  margin-bottom: 3rem; }
-  .formulario .contact-box {
-    max-width: 70%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: center;
-    background-color: #005f77;
-    border-radius: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
-    font-family: "Roboto", sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-    color: #f6f6c9; }
-    .formulario .contact-box .left {
-      background: url("../assets/images/cartaFondo.jpg") no-repeat center;
-      background-size: cover;
-      height: 100%;
-      border-top-left-radius: 2rem;
-      border-bottom-left-radius: 2rem; }
-    .formulario .contact-box .right {
-      padding: 25px 40px; }
-      .formulario .contact-box .right .field {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        background-color: #f6f6c9; }
-        .formulario .contact-box .right .field .suscribite {
-          margin-bottom: 1rem; }
-
-/*página error*/
-.fondoSecundario {
-  background-image: linear-gradient(to right top, #051937, #003b5f, #005f77, #008479, #25a667); }
-  .fondoSecundario .gridContenedor {
-    display: grid;
-    height: 100vh;
-    grid-gap: 1rem;
-    grid-template-columns: 1fr 1fr;
-    font-family: "Water Brush", cursive;
-    text-align: center;
-    justify-content: center;
-    font-size: 2.5rem;
-    color: #f6f6c9; }
-    .fondoSecundario .gridContenedor .parrafoError .fotoError {
-      display: grid;
-      place-items: center;
-      text-align: center;
-      justify-content: center;
-      align-content: center;
-      margin-top: 1rem; }
 
 .tituloPrincipal {
   font-family: "Roboto", sans-serif;
@@ -280,58 +210,22 @@
     margin: auto;
     width: 334px;
     height: 451px; }
-  /*adaptacion de video mapa y formulario*/
-  .video {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    margin-top: 20%; }
-    .video .iFrame {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%; } }
-
-.seccionMapa .mapa {
-  display: block;
-  margin: 0 auto;
-  width: 250px;
-  height: 250px;
-  justify-content: space-around; }
-
-.contact-box {
-  grid-template-columns: 1fr; }
-  .contact-box .left {
-    background-size: cover;
-    height: 100%; }
-  .contact-box .right {
-    padding: 25px 20px; }
-
-.card {
-  display: flex;
-  margin: 1rem auto;
-  height: fit-content; }
-
-.fondoSecundario .gridcontenedor {
-  font-size: 1.7rem; }
-  .fondoSecundario .gridcontenedor .parrafoError .fotoError {
-    width: 200px;
-    height: 200px; }
-
-/* parrafos*/
-.parrafo {
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-  text-align: justify;
-  text-decoration: underline;
-  margin-left: 2rem;
-  color: #f6f6c9;
-  text-decoration: none;
-  font-weight: 400;
-  margin-left: 2rem;
-  margin-right: 1rem; }
+  .card {
+    display: flex;
+    margin: 1rem auto;
+    height: fit-content; }
+  /* parrafos*/
+  .parrafo {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    text-align: justify;
+    text-decoration: underline;
+    margin-left: 2rem;
+    color: #f6f6c9;
+    text-decoration: none;
+    font-weight: 400;
+    margin-left: 2rem;
+    margin-right: 1rem; } }
 
 /*media querys para tablet*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -362,25 +256,5 @@
   .footer .parrafoFooter {
     font-family: "Roboto", sans-serif;
     font-size: 1rem; }
-  .seccionMapa .mapa {
-    width: 250px;
-    height: 250px;
-    justify-content: center;
-    align-content: center;
-    margin-left: 5rem; } }
-
-.card {
-  height: fit-content; }
-
-.formulario {
-  line-height: none;
-  height: fit-content; }
-  .formulario .contenedorMain {
-    padding: 20px; }
-    .formulario .contenedorMain .contact-box {
-      grid-template-columns: 1fr; }
-      .formulario .contenedorMain .contact-box .left {
-        background-size: cover;
-        height: 100%; }
-      .formulario .contenedorMain .contact-box .right {
-        padding: 25px 20px; }
+  .card {
+    height: fit-content; } }
