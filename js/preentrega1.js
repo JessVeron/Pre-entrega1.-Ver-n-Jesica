@@ -1,36 +1,26 @@
+let nombreUsuario = prompt ("Ingresa tu nombre por favor");
 
-
-const precioObrasCompletas = 2300
-const precioSigloxxi = 800
-const precioFreudPaLoPibe = 1655
-
-
-let entrada =prompt ("¿Querés comprar algo?");
-while (entrada != "no") {
-    let libroComprar = prompt ("¿Qué libro querés comprar?")
-    let cantidad = parseInt(prompt("Ingresa cuántos volúmenes querés comprar"))
-    function calcularPrecio (libroComprar , cantidad);
-    switch (libroComprar) {
-        case "Obras completas":
-            precio = precioObrasCompletas * cantidad;
-            alert ("El costo de los libros es : " + precio);
-            break;
-        case "Siglo XXI":
-            precio = precioSigloxxi * cantidad;
-            alert ("El costo de los libros es : " + precio);
-            break;
-        case "Freud pa lo pibe":
-            numero = precioFreudPaLoPibe;
-            alert ("El costo de los libros es : " + numero);
-        default:
-            alert ("Asegurate de escribir bien los nombres de los libros");
-            break; 
-
+if (nombreUsuario === ""){
+   alert ("No ingresaste el nombre de usuario");
+        while (nombreUsuario === "") {
+                nombreUsuario= prompt ("Por favor ingresa un nombre válido");
+                alert ("Hola " + nombreUsuario +" voy a ayudarte con tu compra");
     }
-   entrada= prompt("Gracias por tu visita")
+}
+else {
+    alert ("Hola " + nombreUsuario +" voy a ayudarte con tu compra");
 }
 
+let precio = 0;
+function calcularPrecio (costo, cantidad ){
+    console.log(precio);
+    precio = costo * cantidad;
+    return precio
+  
+}
 
-
-
+let costo = parseInt(prompt ("Por favor ingresa el costo del libro"))
+let cantidad = parseInt(prompt ("Por favor ingresa la cantidad de volumenes"))
+calcularPrecio(costo, cantidad)
+alert ( "El costo de tus libros es de " + precio)
 
