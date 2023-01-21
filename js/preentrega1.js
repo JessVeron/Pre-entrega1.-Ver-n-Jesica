@@ -15,12 +15,23 @@ let precio = 0;
 function calcularPrecio (costo, cantidad ){
     console.log(precio);
     precio = costo * cantidad;
-    return precio
-  
+    return precio 
+}
+
+let costoTotal = 0;
+function sumaPrecios(costo, precio){
+  costoTotal= costo + precio;
+  return costoTotal
 }
 
 let costo = parseInt(prompt ("Por favor ingresa el costo del libro"))
 let cantidad = parseInt(prompt ("Por favor ingresa la cantidad de volumenes"))
-calcularPrecio(costo, cantidad)
-alert ( "El costo de tus libros es de " + precio)
 
+do {
+    calcularPrecio(costo, cantidad);
+    alert ( "El costo de tus libros es de " + precio)
+    costo = parseInt(prompt ("Ingresar otro costo o escribe salir para terminar"))
+    sumaPrecios (costo, precio)
+    alert ( "El costo de tus libros es de " + costoTotal)
+    break;
+} while (costo != "salir")
